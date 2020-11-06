@@ -54,7 +54,7 @@ a{
 #shorttext{
     position: absolute;
     color: white;
-    bottom: 12rem;
+    bottom: 9rem;
     right: 8em;
     display: block;
     z-index: 3;
@@ -93,13 +93,14 @@ nav ul li{
 .navs{
     padding: 14px;
     margin: 2px;
+    border: rgba(0, 0, 0, 0) solid 2px;
 }
 
 .navs:hover{
     border-radius: 20px;
-    background-color: red;
+    background-color: rgba(0, 0, 0, 0);
     color: black;
-    border: white solid 1px;
+    border: red solid 2px;
 }
 
 /* .navs::after {

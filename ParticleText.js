@@ -7,7 +7,7 @@ var text1 = new Blotter.Text("COSMIC", {
     fill: "#fff",
     paddingLeft: 700,
     paddingRight: 30,
-    paddingTop: 190,
+    paddingTop: 150,
     paddingBottom: 80
 });
 var text2 = new Blotter.Text("QUARKS", {
@@ -16,7 +16,7 @@ var text2 = new Blotter.Text("QUARKS", {
     fill: "#fff",
     paddingLeft: 700,
     paddingRight: 30,
-    paddingTop: 340,
+    paddingTop: 300,
     paddingBottom: 80
 });
 
