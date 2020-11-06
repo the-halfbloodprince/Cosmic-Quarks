@@ -101,6 +101,7 @@ nav ul li{
     background-color: rgba(0, 0, 0, 0);
     color: black;
     border: red solid 2px;
+    transition: 0.5s ease;
 }
 
 /* .navs::after {
@@ -132,16 +133,16 @@ nav ul li{
 #logo{
     position: absolute;
     z-index: 1;
-    width: 80vh;
-    height: 80vh;
+    width: 90vh;
+    height: 90vh;
     top: 0;
 }
 
 #logo2{
     position: absolute;
     z-index: 1;
-    top: 50px;
+    top: 30px;
     left: 20px;
-    width: 25vh;
-    height: 20vh;
+    width: 20vh;
+    height: 15vh;
 }
