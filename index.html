@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <!--stylesheets-->
     <link rel="stylesheet" href="widescreen.css">
     <!-- <link rel="stylesheet" media="screen and (min-width: 900px)" href="widescreen.css"> -->
     <!-- <link rel="stylesheet" media="screen and (max-width: 600px)" href="smallscreen.css"> -->
@@ -12,55 +14,34 @@
 <body>
     <nav>
         <ul>
-            <li class="navs">Hi!</li>
-            <li class="navs">About Us</li>
-            <li class="navs">Prob. Statement</li>
-            <li class="navs">Work</li>
-            <li class="navs">The Team</li>
-            <li class="navs">Contact</li>
+            <li class="navs"><a href="#Home">Hi!</a></li>
+            <li class="navs"><a href="#abus">About Us</a></li>
+            <li class="navs"><a href="#probState">Prob. Statement</a></li>
+            <li class="navs"><a href="#work">Work</a></li>
+            <li class="navs"><a href="#Team">The Team</a></li>
+            <li class="navs"><a href="#Contact">Contact</a></li>
         </ul>
     </nav>
-    <div id="particles-js"></div>
-    <div id="main"></div>
-    <section class="sec" id="Home"></section>
+   
+    <section class="sec" id="Home">
+        <div id="particles-js"></div>
+        <div id="main-cosmic"></div>
+        <div id="main-quarks"></div>
+        <div id="logodiv"><img id="logo" src="assets/logo_darkbg.png"></div>
+        <div id="shorttext">lorem ipsum :3</div>
+    </section>
     <section class="sec" id="abUs"></section>
     <section class="sec" id="probState"></section>
     <section class="sec" id="Work"></section>
     <section class="sec" id="Team"></section>
     <section class="sec" id="Contact"></section>
 
- 
+    <!--scripts-->
     <script src="assets/particles.js"></script> 
     <script src="assets/app.js"></script> 
     <script src="assets/Blotter/build/blotter.js"></script>
     <script src="assets/Blotter/build/materials/fliesMaterial.js"></script>
-    <!-- <script type="text/javascript" src="screept.js"></script> --> 
-    <script>
-
-        container = document.getElementById("main");
-    
-        var text = new Blotter.Text("COSMIC QUARKS", {
-            family: "monospace",
-            size: 70,
-            fill: "#fff",
-            paddingLeft: 80,
-            paddingRight: 80,
-            paddingTop: 80,
-            paddingBottom: 80
-        });
-    
-        var material = new Blotter.FliesMaterial();
-        material.uniforms.uPointCellWidth.value = 0.01;
-        material.uniforms.uPointRadius.value = 0.3;
-        material.uniforms.uSpeed.value = 3;
-    
-        var blotter = new Blotter(material, {
-            texts: text
-        });
-    
-        var scope = blotter.forText(text);
-        scope.appendTo(container);
-    
-    </script>
+    <script type="text/javascript" src="ParticleText.js"></script> 
+   
 </body>
 </html>
