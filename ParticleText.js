@@ -4,7 +4,7 @@ container2 = document.getElementById("main-quarks");
 var text1 = new Blotter.Text("COSMIC", {
     family: "monospace",
     size: 190,
-    fill: "#00FFFF",
+    fill: "#fff",
     paddingLeft: 700,
     paddingRight: 30,
     paddingTop: 150,
@@ -13,7 +13,7 @@ var text1 = new Blotter.Text("COSMIC", {
 var text2 = new Blotter.Text("QUARKS", {
     family: "monospace",
     size: 190,
-    fill: "#00FFFF",
+    fill: "#fff",
     paddingLeft: 700,
     paddingRight: 30,
     paddingTop: 300,
