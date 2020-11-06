@@ -132,15 +132,15 @@ nav ul li{
 #logo{
     position: absolute;
     z-index: 1;
-    width: 30vh;
-    height: 30vh;
+    width: 80vh;
+    height: 80vh;
     top: 0;
 }
 
 #logo2{
     position: absolute;
     z-index: 1;
-    top: 250px;
+    top: 50px;
     left: 20px;
     width: 25vh;
     height: 20vh;
