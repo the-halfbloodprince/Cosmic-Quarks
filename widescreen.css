@@ -91,7 +91,7 @@ nav ul li{
 }
 
 .navs{
-    padding: 14px;
+    padding: 3px 10px 3px 10px;
     margin: 2px;
     border: rgba(0, 0, 0, 0) solid 2px;
 }
@@ -132,7 +132,16 @@ nav ul li{
 #logo{
     position: absolute;
     z-index: 1;
-    width: 100vh;
-    height: 100vh;
+    width: 80vh;
+    height: 80vh;
     top: 0;
+}
+
+#logo2{
+    position: absolute;
+    z-index: 1;
+    top: 50px;
+    left: 20px;
+    width: 25vh;
+    height: 20vh;
 }
