@@ -8,7 +8,7 @@
 
 *::selection{
     background-color: red;
-    color:white;
+    color:black;
 }
 
 body{
@@ -208,4 +208,30 @@ section{
 #Work h1 span{
     color: red;
     margin: 30px;
+}
+
+section h1 span::selection{
+    color: white;
+}
+
+#Report{
+    width:22rem;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 30px;
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease;
+}
+
+#Report:hover{
+    background: red ;
+    color: black;
+}
+
+#Report a{
+    color: inherit;
+    font-weight: 600;
 }
