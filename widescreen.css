@@ -142,6 +142,15 @@ nav ul li{
     top: 0;
 }
 
+#logo::selection{
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.navs a::selection{
+    color: red;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
 #logo2{
     position: absolute;
     z-index: 1;
@@ -226,6 +235,7 @@ section h1 span::selection{
     justify-content: center;
     align-items: center;
     transition: 0.2s ease;
+    overflow-y: hidden;
 }
 
 #Report:hover{
@@ -242,14 +252,6 @@ section h1 span::selection{
     transition: all 2s;
 }
 
-[data-scroll="in"]{
-    opacity: 1;
-    transform: translate(0,0);
-}
-[data-scroll="in"] span{
-    color: red;
-    transition: all 2.3s ;
-}
 [data-scroll="out"]{
     opacity: 0;
     transform: translate(0,60px);
@@ -258,6 +260,60 @@ section h1 span::selection{
     color: white;
     transition: all 0.5s;
 }
+
+[data-scroll="in"]{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+#abUs p{
+    border: solid 2px rgb(7, 73, 196);
+    padding: 20px;
+    border-radius: 40px;
+}
+#probState p{
+    border: solid 2px rgb(7, 196, 48);
+    padding: 20px;
+    border-radius: 40px;
+}
+#Work p{
+    border: solid 2px rgb(202, 166, 4);
+    padding: 20px;
+    border-radius: 40px;
+}
+#Team p{
+    border: solid 2px rgb(196, 7, 149);
+    padding: 20px;
+    border-radius: 40px;
+}
+#Contact p{
+    border: solid 2px rgb(7, 196, 149);
+    padding: 20px;
+    border-radius: 40px;
+}
+
+/*color of the spans*/
+#abUs [data-scroll="in"] span{
+    color: rgb(7, 73, 196);
+    transition: all 2.3s ;
+}
+#probState [data-scroll="in"] span{
+    color: rgb(7, 196, 48);
+    transition: all 2.3s ;
+}
+#Work [data-scroll="in"] span{
+    color: rgb(202, 166, 4);
+    transition: all 2.3s ;
+}
+#Team [data-scroll="in"] span{
+    color: rgb(196, 7, 149);
+    transition: all 2.3s ;
+}
+#Contact [data-scroll="in"] span{
+    color: rgb(7, 196, 149);
+    transition: all 2.3s ;
+}
+
 
 h1,p{
     overflow: hidden;
