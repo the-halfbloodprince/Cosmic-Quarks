@@ -66,6 +66,8 @@ a{
 
 nav{
     position: absolute;
+    top: 0;
+    left: 0;
     /* display: flex;
     flex-direction: row; */
     padding: 10px 0 5px 0;
@@ -245,6 +247,8 @@ section h1 span::selection{
 #Report:hover{
     background: red ;
     color: black;
+    box-shadow: 7px 7px rgb(148, 7, 7);
+    transform: translate(-5px,-5px) scale(0.9);
 }
 
 #Report a{
@@ -253,7 +257,7 @@ section h1 span::selection{
 }
 
 [data-scroll]{
-    transition: all 2s;
+    transition: all 2s 0.3s;
 }
 
 [data-scroll="out"]{
@@ -274,16 +278,19 @@ section h1 span::selection{
     border: solid 2px rgb(7, 73, 196);
     padding: 20px;
     border-radius: 40px;
+    box-shadow: 10px 10px blue;
 }
 #probState p{
     border: solid 2px rgb(7, 196, 48);
     padding: 20px;
     border-radius: 40px;
+    box-shadow: 10px 10px green;
 }
 #Work p{
     border: solid 2px rgb(202, 166, 4);
     padding: 20px;
     border-radius: 40px;
+    box-shadow: 10px 10px yellow;
 }
 #Team p{
     border: solid 2px rgb(196, 7, 149);
