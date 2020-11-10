@@ -7,7 +7,7 @@
 }
 
 *::selection{
-    background-color: red;
+    background-color: rgba(255,0,0,0.7);
     color:black;
 }
 
@@ -160,6 +160,10 @@ nav ul li{
     height: 80px;
 }
 
+#logo2::selection{
+    background-color: rgba(0, 0, 0, 0);
+}
+
 
 
 section{
@@ -292,6 +296,22 @@ section h1 span::selection{
     border-radius: 40px;
 }
 
+#abUs p::selection{
+    background-color: rgba(7, 73, 196,0.7);
+}
+#probState p::selection{
+    background-color: rgb(7, 196, 48);
+}
+#Work p::selection{
+    background-color: rgb(202, 166, 4);
+}
+#Team p::selection{
+    background-color: rgb(196, 7, 149);
+}
+#Contact p::selection{
+    color: rgb(7, 196, 149);
+}
+
 /*color of the spans*/
 #abUs [data-scroll="in"] span{
     color: rgb(7, 73, 196);
@@ -329,4 +349,40 @@ h1,p{
     opacity: 0;
     transform: scale(40);
     transition: all 1s;
+}
+
+#abUs h1::selection{
+    background-color: rgb(7, 73, 196) ;
+}
+#abUs h1 span::selection{
+    color: white ;
+    background-color: rgb(7, 73, 196);
+}
+#probState h1::selection{
+    background-color: rgb(7, 196, 48) ;
+}
+#probState h1 span::selection{
+    color: white ;
+    background-color: rgb(7, 196, 48);
+}
+#Work h1::selection{
+    background-color: rgb(202, 166, 4) ;
+}
+#Work h1 span::selection{
+    color: white ;
+    background-color: rgb(202, 166, 4);
+}
+#Team h1::selection{
+    background-color: rgb(196, 7, 149) ;
+}
+#Team h1 span::selection{
+    color: white ;
+    background-color: rgb(196, 7, 149);
+}
+#Contact h1::selection{
+    background-color: rgb(7, 196, 149) ;
+}
+#Contact h1 span::selection{
+    color: white ;
+    background-color:  rgb(7, 196, 149);
 }
