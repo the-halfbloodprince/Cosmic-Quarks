@@ -1,3 +1,4 @@
 ScrollOut({
-    targets:'h,p,div';
-})
+    threshold:0.1
+  });
+  

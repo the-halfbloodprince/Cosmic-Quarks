@@ -174,9 +174,9 @@ section{
 #abUs h1{
     font-size: 3rem;
 }
-#abUs h1 span{
-    color: red;
-}
+/* #abUs h1 span{
+    color: rgb(79, 9, 136);
+} */
 
 #probState{
     top: 200vh;
@@ -190,9 +190,9 @@ section{
 #probState h1{
     font-size: 3rem;
 }
-#probState h1 span{
-    color: red;
-}
+/* #probState h1 span{
+    color: rgb(79, 9, 136);
+} */
 #Work{
     top: 300vh;
     height: 200vh;
@@ -207,10 +207,10 @@ section{
     font-size: 3rem;
     margin: 30px;
 }
-#Work h1 span{
-    color: red;
+/* #Work h1 span{
+    color: rgb(79, 9, 136);
     margin: 30px;
-}
+} */
 
 section h1 span::selection{
     color: white;
@@ -236,4 +236,41 @@ section h1 span::selection{
 #Report a{
     color: inherit;
     font-weight: 600;
+}
+
+[data-scroll]{
+    transition: all 2s;
+}
+
+[data-scroll="in"]{
+    opacity: 1;
+    transform: translate(0,0);
+}
+[data-scroll="in"] span{
+    color: red;
+    transition: all 2.3s ;
+}
+[data-scroll="out"]{
+    opacity: 0;
+    transform: translate(0,60px);
+}
+[data-scroll="out"] span{
+    color: white;
+    transition: all 0.5s;
+}
+
+h1,p{
+    overflow: hidden;
+}
+
+#Home [data-scroll="in"]{
+    opacity: 1;
+    transform: scale(1);
+    transition: all 6s;
+    transform-origin: right;
+}
+#Home [data-scroll="out"]{
+    opacity: 0;
+    transform: scale(40);
+    transition: all 1s;
 }
