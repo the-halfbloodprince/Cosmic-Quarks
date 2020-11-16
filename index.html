@@ -10,7 +10,17 @@
     <!-- <link rel="stylesheet" media="screen and (min-width: 900px)" href="widescreen.css"> -->
     <!-- <link rel="stylesheet" media="screen and (max-width: 600px)" href="smallscreen.css"> -->
     <title>Cosmic Quarks</title>
-    <link rel = "icon" href="assets/logo_darkbg.png" type = "image/x-icon"> 
+    <link rel = "icon" href="assets/logo_darkbg.png" type = "image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        //Navbar Animation
+        $(window).on('scroll',function(){
+            if ($(window).scrollTop())
+                $('nav').addClass('scrolled');
+            else
+                $('nav').removeClass('scrolled');
+        })
+    </script>
 </head>
 <body>
 <div id="particles-js">

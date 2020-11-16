@@ -73,13 +73,23 @@ nav{
     padding: 10px 0 5px 0;
     padding-left: 30vw;
     width: 100vw;
-    height: 100px;
+    height: 5em;
     padding-right: 25px;
     background-color: rgba(0, 0, 0, 0);
-    color: white;
+    color: rgb(160, 160, 160);
     font-family: 'Roboto Mono', monospace;
     z-index: 1000;
+    transition: all 0.5s ease;
 }
+
+/* nav.scrolled{
+    
+    font-size: 0.8em;
+    transform-origin: right;
+    
+    background-color: rgba(21, 255, 0, 0.644);
+
+} */
 
 nav ul{
     display: flex;
@@ -99,15 +109,19 @@ nav ul li{
 .navs{
     padding: 3px 10px 3px 10px;
     margin: 2px;
+    color: rgb(160, 160, 160);
     border: rgba(0, 0, 0, 0) solid 2px;
 }
 
 .navs:hover{
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0);
-    color: black;
     border: red solid 2px;
     transition: 0.3s ease border-radius, 0.5s ease border-color;
+}
+
+.navs a{
+    color: rgb(235, 235, 235);
 }
 
 /* .navs::after {
