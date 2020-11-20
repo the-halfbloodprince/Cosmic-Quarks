@@ -16,29 +16,29 @@
         //Navbar Animation
         $(window).on('scroll',function(){
             if ($(window).scrollTop())
-                $('nav').addClass('scrolled');
+                $('.navs').addClass('scrolled');
             else
-                $('nav').removeClass('scrolled');
-        })
+                $('.navs').removeClass('scrolled');
+        });
     </script>
 </head>
 <body>
 <div id="particles-js">
     <nav>
         <ul>
-            <li class="navs"><a href="#Home">Hi!</a></li>
-            <li class="navs"><a href="#abUs">About Us</a></li>
-            <li class="navs"><a href="#probState">Prob. Statement</a></li>
-            <li class="navs"><a href="#Work">Work</a></li>
-            <li class="navs"><a href="#Team">The Team</a></li>
-            <li class="navs"><a href="#Contact">Contact</a></li>
+            <li class="navs" id="Homelink"><a href="#Home">Hi!</a></li>
+            <li class="navs" id="abUslink"><a href="#abUs">About Us</a></li>
+            <li class="navs" id="probStatelink"><a href="#probState">Prob. Statement</a></li>
+            <li class="navs" id="Worklink"><a href="#Work">Work</a></li>
+            <li class="navs" id="Teamlink"><a href="#Team">The Team</a></li>
+            <li class="navs" id="Contactlink"><a href="#Contact">Contact</a></li>
         </ul>
     </nav>
    
     <section class="sec" id="Home">
         <!-- <div id="particles-js"></div> -->
-        <div data-scroll id="main-cosmic"></div>
-        <div data-scroll id="main-quarks"></div>
+        <div id="main-cosmic"></div>
+        <div id="main-quarks"></div>
         <div id="logodiv"><img id="logo" src="assets/logo_darkbg.png" width="500" height="600"></div>
         <div id="logodiv"><img id="logo2" src="assets/sserd.png"></div>
         <div id="shorttext">lorem ipsum :3</div>
@@ -100,6 +100,38 @@
     <script type="text/javascript" src="ParticleText.js"></script> 
     <script src="assets/scroll-out.min.js"></script>
     <script type="text/javascript" src="screept.js"></script> 
+    <script type="module">
+            import jump from "./node_modules/jump.js/dist/jump.module.js";
+
+            //referencing
+var Home=document.getElementById("Homelink");
+var abUs=document.getElementById("abUslink");
+var probState=document.getElementById("probStatelink");
+var Work=document.getElementById("Worklink");
+var Team=document.getElementById("Teamlink");
+var Contact=document.getElementById("Contactlink");
+
+//jumps
+Home.addEventListener('click',()=>{
+      jump('#Home');
+})
+abUs.addEventListener('click',()=>{
+      jump('#abUs');
+})
+probState.addEventListener('click',()=>{
+      jump('#probState');
+})
+Work.addEventListener('click',()=>{
+      jump('#Work');
+})
+Team.addEventListener('click',()=>{
+      jump('#Team');
+})
+Contact.addEventListener('click',()=>{
+      jump('#Contact');
+})
+  
+    </script> 
    
 </body>
 </html>

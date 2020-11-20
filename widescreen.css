@@ -65,7 +65,7 @@ a{
 }
 
 nav{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     /* display: flex;
@@ -108,7 +108,7 @@ nav ul li{
 
 .navs{
     padding: 3px 10px 3px 10px;
-    margin: 2px;
+    margin: 5px;
     color: rgb(160, 160, 160);
     border: rgba(0, 0, 0, 0) solid 2px;
 }
@@ -289,30 +289,30 @@ section h1 span::selection{
 }
 
 #abUs p{
-    border: solid 2px rgb(7, 73, 196);
+    /* border: solid 2px rgb(7, 73, 196); */
     padding: 20px;
     border-radius: 40px;
-    box-shadow: 10px 10px blue;
+    /* box-shadow: 10px 10px blue; */
 }
 #probState p{
-    border: solid 2px rgb(7, 196, 48);
-    padding: 20px;
+/*     border: solid 2px rgb(7, 196, 48);
+ */    padding: 20px;
     border-radius: 40px;
-    box-shadow: 10px 10px green;
+    /* box-shadow: 10px 10px green; */
 }
 #Work p{
-    border: solid 2px rgb(202, 166, 4);
+   /*  border: solid 2px rgb(202, 166, 4); */
     padding: 20px;
     border-radius: 40px;
-    box-shadow: 10px 10px yellow;
+    /* box-shadow: 10px 10px yellow; */
 }
 #Team p{
-    border: solid 2px rgb(196, 7, 149);
+   /*  border: solid 2px rgb(196, 7, 149); */
     padding: 20px;
     border-radius: 40px;
 }
 #Contact p{
-    border: solid 2px rgb(7, 196, 149);
+   /*  border: solid 2px rgb(7, 196, 149); */
     padding: 20px;
     border-radius: 40px;
 }
@@ -406,4 +406,17 @@ h1,p{
 #Contact h1 span::selection{
     color: white ;
     background-color:  rgb(7, 196, 149);
+}
+
+.scrolled{
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 1);
+    border: red solid 2px;
+    transition: 2.5s ease border-radius, 2.5s ease border-color;
+}
+
+.scrolled:hover{
+    background-color: rgb(40, 220, 4);
+    border: black;
+    color: black;
 }
