@@ -20,6 +20,19 @@
             else
                 $('.navs').removeClass('scrolled');
         });
+       /*  $(.navs).on('mousedown',function(){
+                $('.navs').addClass('navclick');
+        });
+        $(.navs).on('mouseup',function(){
+                $('.navs').removeClass('navclick');
+        }); */
+        /* if ($(.navs).hasClass(scrolled) && $(.navs).mousedown()){
+                $('.navs').addClass('navclick');
+        };
+        if ($(.navs).mouseup()){
+                $('.navs').addClass('navclick');
+        }; */
+        
     </script>
 </head>
 <body>
@@ -33,8 +46,8 @@
             <li class="navs" id="Teamlink"><a href="#Team">The Team</a></li>
             <li class="navs" id="Contactlink"><a href="#Contact">Contact</a></li>
         </ul>
-    </nav>
-   
+    </nav></div>
+   <!--Front Page-->
     <section class="sec" id="Home">
         <!-- <div id="particles-js"></div> -->
         <div id="main-cosmic"></div>
@@ -43,15 +56,11 @@
         <div id="logodiv"><img id="logo2" src="assets/sserd.png"></div>
         <div id="shorttext">lorem ipsum :3</div>
     </section>
+    <!--Pages-->
     <section class="sec" id="abUs">
         <h1 data-scroll>WHO ARE <span>WE</span>?</h1>
         <p data-scroll>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam mollitia vero adipisci cum inventore, quasi ipsa sit accusamus nemo sed architecto dolorem est temporibus asperiores consequuntur laboriosam dignissimos, facilis libero?
-            Quos excepturi, quis dolores, amet illum nobis mollitia cumque eaque quod asperiores neque tempore sunt. Voluptatem, possimus labore tempora cumque tenetur aliquid voluptas unde quaerat accusantium maxime magnam, enim rem.
-            Quia quod fugiat officiis facilis unde, similique enim commodi itaque, beatae necessitatibus exercitationem libero ullam sit. Tempore omnis dolorem cupiditate voluptates. Debitis dolore praesentium tempora suscipit cumque culpa error officiis.
-            Omnis tempora expedita impedit maxime, voluptatem architecto odio aliquid facilis nam! Quas atque pariatur, quia officiis unde delectus minus amet aperiam sint hic beatae! Laboriosam magni fuga aut libero eos.
-            Repudiandae ea quisquam reprehenderit facere rem facilis expedita. Culpa sapiente quasi deserunt non, quisquam dolore impedit necessitatibus labore architecto tempora possimus veniam accusantium nemo numquam debitis aut nihil minima quam!
-            In voluptatum hic similique ex doloribus omnis dignissimos incidunt consectetur minima beatae, deleniti fugit obcaecati esse autem odit alias quod est amet, totam suscipit saepe vitae et reiciendis. Repellendus, aliquid!
+            We are a Astrophysics team under SSERD IPD working on finding a relation that accounts for the mass transfer from a companion star to a black hole, which would help us conclude the mass conservation and find if there is any discrepancy, which we call as the ghost mass and use reference systems for validation of ghost mass problem and accounting for the discrepancy using models/computation.
             </p>
     </section>
     <section class="sec" id="probState">
@@ -91,7 +100,6 @@
     <section class="sec" id="Team">
     </section>
     <section class="sec" id="Contact"></section>
-</div>
     <!--scripts-->
     <script src="assets/particles.js"></script> 
     <script src="assets/app.js"></script>
