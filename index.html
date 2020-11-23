@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oxygen&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <!--stylesheets-->
     <link rel="stylesheet" href="widescreen.css">
@@ -36,17 +38,18 @@
     </script>
 </head>
 <body>
-<div id="particles-js">
-    <nav>
-        <ul>
-            <li class="navs" id="Homelink"><a href="#Home">Hi!</a></li>
-            <li class="navs" id="abUslink"><a href="#abUs">About Us</a></li>
-            <li class="navs" id="probStatelink"><a href="#probState">Prob. Statement</a></li>
-            <li class="navs" id="Worklink"><a href="#Work">Work</a></li>
-            <li class="navs" id="Teamlink"><a href="#Team">The Team</a></li>
-            <li class="navs" id="Contactlink"><a href="#Contact">Contact</a></li>
-        </ul>
-    </nav></div>
+    <div id="particles-js">
+        <nav>
+            <ul>
+                <li class="navs" id="Homelink"><a href="#Home">Hi!</a></li>
+                <li class="navs" id="abUslink"><a href="#abUs">About Us</a></li>
+                <li class="navs" id="probStatelink"><a href="#probState">Prob. Statement</a></li>
+                <li class="navs" id="Worklink"><a href="#Work">Work</a></li>
+                <li class="navs" id="Teamlink"><a href="#Team">The Team</a></li>
+                <li class="navs" id="Contactlink"><a href="#Contact">Contact</a></li>
+            </ul>
+         </nav>
+    </div>
    <!--Front Page-->
     <section class="sec" id="Home">
         <!-- <div id="particles-js"></div> -->
@@ -112,32 +115,32 @@
             import jump from "./node_modules/jump.js/dist/jump.module.js";
 
             //referencing
-var Home=document.getElementById("Homelink");
-var abUs=document.getElementById("abUslink");
-var probState=document.getElementById("probStatelink");
-var Work=document.getElementById("Worklink");
-var Team=document.getElementById("Teamlink");
-var Contact=document.getElementById("Contactlink");
+    var Home=document.getElementById("Homelink");
+    var abUs=document.getElementById("abUslink");
+    var probState=document.getElementById("probStatelink");
+    var Work=document.getElementById("Worklink");
+    var Team=document.getElementById("Teamlink");
+    var Contact=document.getElementById("Contactlink");
 
-//jumps
-Home.addEventListener('click',()=>{
+    //jumps
+    Home.addEventListener('click',()=>{
       jump('#Home');
-})
-abUs.addEventListener('click',()=>{
+    })
+    abUs.addEventListener('click',()=>{
       jump('#abUs');
-})
-probState.addEventListener('click',()=>{
+    })
+    probState.addEventListener('click',()=>{
       jump('#probState');
-})
-Work.addEventListener('click',()=>{
+    })
+    Work.addEventListener('click',()=>{
       jump('#Work');
-})
-Team.addEventListener('click',()=>{
+    })
+    Team.addEventListener('click',()=>{
       jump('#Team');
-})
-Contact.addEventListener('click',()=>{
+    })
+    Contact.addEventListener('click',()=>{
       jump('#Contact');
-})
+    })
   
     </script> 
    

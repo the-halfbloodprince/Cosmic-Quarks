@@ -13,10 +13,14 @@
 
 body{
     background-color: black;
-    font-family: 'Roboto Mono', monospace;
+    /* font-family: 'Roboto Mono', monospace; */
+    font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
     overflow: hidden;
+    /* scroll-snap-type: y mandatory; */
 }
+
+
 
 a{
     text-decoration: none;
@@ -79,7 +83,8 @@ nav{
     padding-right: 25px;
     background-color: rgba(0, 0, 0, 0);
     color: rgb(160, 160, 160);
-    font-family: 'Roboto Mono', monospace;
+    /* font-family: 'Roboto Mono', monospace; */
+    font-family: 'Montserrat', sans-serif;
     z-index: 1000;
     transition: all 0.5s ease;
 }
@@ -112,7 +117,7 @@ nav ul li{
     padding: 3px 10px 3px 10px;
     margin: 5px;
     color: rgb(160, 160, 160);
-    border: rgba(0, 0, 0, 0) solid 2px;
+    border: rgba(244, 5, 5, 0) solid 2px;
     z-index: 100;
 }
 
@@ -193,6 +198,7 @@ section{
     padding: 50px;
     color: white;
     overflow-y: hidden;
+    scroll-snap-align: start;
 }
 
 #abUs{
@@ -202,6 +208,7 @@ section{
     align-items: center;
     /* top: 100vh; */
     font-size: 1.3rem;
+    /* scroll-snap-align: start; */
 }
 
 #abUs h1{
