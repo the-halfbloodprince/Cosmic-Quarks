@@ -85,7 +85,7 @@ nav{
     color: rgb(160, 160, 160);
     /* font-family: 'Roboto Mono', monospace; */
     font-family: 'Montserrat', sans-serif;
-    z-index: 1000;
+    z-index: 10000;
     transition: all 0.5s ease;
 }
 
@@ -163,7 +163,7 @@ nav ul li{
     z-index: 4;
     width: 90vh;
     height: 90vh;
-    top: 10vh;
+    top: 0;
 }
 
 #logo::selection{
@@ -298,6 +298,10 @@ section h1 span::selection{
 [data-scroll="in"]{
     opacity: 1;
     transform: translate(0,0);
+}
+
+section p{
+    text-align: center;
 }
 
 #abUs p{
