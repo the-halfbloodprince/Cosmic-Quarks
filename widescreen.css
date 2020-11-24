@@ -592,6 +592,14 @@ h1,p{
     
 }
 
+.co div{
+    overflow: visible;
+}
+
+.co i{
+    overflow: visible;
+}
+
 #Team h1 span{
     color: blueviolet;
 }
