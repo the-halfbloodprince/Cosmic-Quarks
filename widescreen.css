@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
+    transform-style: preserve-3d;
 }
 
 *::selection{
@@ -199,6 +200,8 @@ section{
     color: white;
     overflow-y: hidden;
     scroll-snap-align: start;
+    transform-style: preserve-3d;
+    
 }
 
 #abUs{
@@ -223,30 +226,32 @@ section{
     /* top: 200vh; */
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content:center;
     align-items: center;
     font-size: 1.3rem;
 }
 
 #probState h1{
     font-size: 3rem;
+    margin: 50px;
 }
 /* #probState h1 span{
     color: rgb(79, 9, 136);
 } */
 #Work{
     /* top: 300vh; */
-    height: 200vh;
+    /* height: 200vh; */
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content:center;
     align-items: center;
     font-size: 1.3rem;
 }
 
 #Work h1{
     font-size: 3rem;
-    margin: 30px;
+    margin: 50px;
+    height: 5em;
 }
 /* #Work h1 span{
     color: rgb(79, 9, 136);
@@ -276,6 +281,21 @@ section h1 span::selection{
     box-shadow: 7px 7px rgb(148, 7, 7);
     transform: translate(-5px,-5px) scale(0.9);
 }
+
+#Team h1{
+    font-size: 3em;
+    text-align: center;
+}
+
+#Team h1::selection{
+    background-color: blueviolet;
+    color: black;
+}
+
+#Team h1 span{
+    color: blueviolet;
+}
+
 
 #Report a{
     color: inherit;
@@ -326,6 +346,8 @@ section p{
 #Team p{
    /*  border: solid 2px rgb(196, 7, 149); */
     padding: 20px;
+    padding-left: 3vw;
+    padding-right: 3vw;
     border-radius: 40px;
 }
 #Contact p{
@@ -364,7 +386,7 @@ section p{
     transition: all 2.3s ;
 }
 #Team [data-scroll="in"] span{
-    color: rgb(196, 7, 149);
+    color: blueviolet;
     transition: all 2.3s ;
 }
 #Contact [data-scroll="in"] span{
@@ -411,11 +433,11 @@ h1,p{
     background-color: rgb(202, 166, 4);
 }
 #Team h1::selection{
-    background-color: rgb(196, 7, 149) ;
+    background-color: blueviolet;
 }
 #Team h1 span::selection{
     color: white ;
-    background-color: rgb(196, 7, 149);
+    background-color: blueviolet;
 }
 #Contact h1::selection{
     background-color: rgb(7, 196, 149) ;
@@ -457,4 +479,119 @@ h1,p{
     background-color: rgb(0, 0, 0);
     transform: translate(-1px,-1px);
     box-shadow: red 3px 3px;
+}
+
+#Team{
+    height: max-content;
+    
+}
+
+
+
+#Team{
+    padding: 0;
+    height: 150vw;
+}
+
+#Team h1{
+    margin: 50px;
+}
+
+
+
+#Team section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    transform-style: preserve-3d;
+    width: 100vw;
+    overflow: visible;
+    padding: 0;
+    margin: 0;
+}
+
+#Team section .members{
+    position: relative;
+    width: 16vw;
+    height: 16vw;
+    margin: 2vw;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    overflow: visible;
+    
+}
+
+#Team section .members .box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: 1s ease;
+    transform: rotateY(180deg);
+    overflow: visible;
+    border-radius: 20px;
+    
+}
+
+#Team section .members:hover .box{
+    transform: rotateY(0deg);
+}
+
+#Team section .members .box .imgBx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    
+}
+
+#Team section .members .box .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: visible;
+    border-radius: 20px;
+    transform: rotateY(180deg);
+}
+
+#Team section .members .box .cntBx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    overflow: visible;
+}
+
+#Team section .members .box .cntBx div.co{
+    height: 57%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: coral;
+    transform: translateZ(100px);
+    overflow: visible;
+    
+}
+
+#Team h1 span{
+    color: blueviolet;
 }
