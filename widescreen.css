@@ -161,7 +161,7 @@ nav ul li{
 
 #logo{
     position: absolute;
-    z-index: 4;
+    z-index: 6;
     width: 90vh;
     height: 90vh;
     top: 0;
@@ -390,7 +390,7 @@ section p{
     transition: all 2.3s ;
 }
 #Contact [data-scroll="in"] span{
-    color: rgb(7, 196, 149);
+    color: rgb(196, 7, 149);
     transition: all 2.3s ;
 }
 
@@ -490,7 +490,7 @@ h1,p{
 
 #Team{
     padding: 0;
-    height: 150vw;
+    height: 105vw;
 }
 
 #Team h1{
@@ -594,12 +594,168 @@ h1,p{
 
 .co div{
     overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.co i{
+.co div i{
     overflow: visible;
+    padding: 5px;
+    font-size: 1.4em;
+}
+
+.co div.name{
+    text-align: center;
+    font-size: 1.5em;
 }
 
 #Team h1 span{
     color: blueviolet;
 }
+
+#Team section #Snape .box .cntBx div.co{
+    background-color: #a40606;
+background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
+    
+}
+#Team section #Raj .box .cntBx div.co{
+    background-color: #a40606;
+background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
+
+}
+#Team section #Adrian .box .cntBx div.co{
+    background-color: #a40606;
+background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
+
+}
+#Team section #Kween .box .cntBx div.co{
+    background-color: #a40606;
+    background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
+    
+}
+#Team section #Bhakti .box .cntBx div.co{
+    background-color: #a40606;
+background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
+
+}
+#Team section #Akshita .box .cntBx div.co{
+    background-color: #a40606;
+    background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
+    
+}
+#Team section #Param .box .cntBx div.co{
+    background-color: #a40606;
+background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
+
+}
+#Team section #mathBoi .box .cntBx div.co{
+    background-color: #a40606;
+background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
+
+}
+#Team section #Rutanshi .box .cntBx div.co{
+    background-color: #a40606;
+    background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
+    
+}
+#Team section #Ashika .box .cntBx div.co{
+    background-color: #a40606;
+background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
+
+}
+#Team section #Sree .box .cntBx div.co{
+    background-color: #a40606;
+background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
+
+}
+#Team section #Alice .box .cntBx div.co{
+    background-color: #a40606;
+background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
+
+}
+#Team section #sruthi .box .cntBx div.co{
+    background-color: #a40606;
+background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
+
+}
+#Team section #Syamadas .box .cntBx div.co{
+    background-color: #a40606;
+background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
+
+}
+#Team section #Keerthi .box .cntBx div.co{
+    background-color: #a40606;
+background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
+
+}
+#Team section #Sahasra .box .cntBx div.co{
+    background-color: #a40606;
+background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
+
+}
+#Team section #Aswathi .box .cntBx div.co{
+    background-color: #a40606;
+background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
+
+}
+#Team section #Suneet .box .cntBx div.co{
+    background-color: #a40606;
+    background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
+    
+}
+#Team section #Padmashree .box .cntBx div.co{
+    background-color: #a40606;
+background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
+
+}
+#Team section #Apoorv .box .cntBx div.co{
+    background-color: #a40606;
+background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
+
+}
+
+section#Contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section#Contact h1{
+    font-size: 3rem;
+    
+}
+section#Contact p{
+    margin: 60px;
+}
+
+
+section#Contact div {
+    overflow: visible;
+    font-size: 2em;
+}
+section#Contact div a i{
+    font-size: 5rem;
+    overflow: visible;
+    margin: 30px;
+}
+
+section#Contact h1 span{
+    color: rgb(196, 7, 149);
+}
+section#Contact h1::selection{
+    background-color:  rgb(196, 7, 149);
+    color:black;
+}
+section#Contact h1 span::selection{
+    background-color: rgb(196, 7, 149);
+    color: white;
+}
+
+section#Contact div p::selection{
+    background-color: rgb(196, 7, 149);
+    color: black;
+}
+
+
+
