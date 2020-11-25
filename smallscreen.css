@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+nav{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(165, 165, 165);
+    display: flex;
+    flex-direction: row;
+    visibility: hidden;
+
+}
+
+#NavL{
+    width: 70vw;
+}
+
+#NavL ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+#NavL ul li{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7em;
+}
+
+.navs#probStatelink{
+    display: none;
+}
+
+#NavClose{
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#particles-js{
+    display: none;
+}
+
+#Home{
+    width: 100vw;
+    height: 100vh;
+}
+
+#logo2div{
+    position: absolute;
+    top: 0;
+    left: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+#logo2{
+    width: 20vw;
+    height: 20vw;
+}
+
+#logodiv{
+    position: absolute;
+    top: 30vw;
+    width: 100vw;
+    height: 100vw;
+}
+
+#logodiv img{
+    width: 100vw;
+    height: 100vw;
+}
+
+#shorttext{
+    width: 100vw;
+    position: absolute;
+    bottom: 20vw;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+section{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#abUs h1{
+    text-align: center;
+    font-size: 2.4em;
+    color: white;
+}
+
+#abUs p{
+    text-align: center;
+    font-size: 1.3em;
+    color: white;
+    margin-top: 40px;
+}
+
+#probState{
+    display: none;
+}
+
+#Work{
+    height: auto;
+}
+
+#Work h1{
+    text-align: center;
+    font-size: 2.4em;
+    color: white;
+}
+
+.pc{
+    display: none;
+}
+
+.mob{
+    text-align: center;
+    font-size: 1.3em;
+    color: white;
+    margin-top: 40px;
+}
+
+#Report{
+    width: 50vw;
+    height: 50px;
+    background:linear-gradient(315deg, #a40606 0%, #d98324 74%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 16px;
+    font-weight: 700;
+    transition: 0.5s ease;
+}
+
+#Report:hover{
+    transform: scale(0.95);
+}
+
+#Team{
+    
+}
+
+#Team h1{
+    font-size: 2.5em;
+    text-align: center;
+}
+
+#Team section{
+    overflow-x: scroll;
+    display: flex;
+    height: 80vh;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#Team section .members{
+    width: 70vw;
+    height: 70vh;
+    margin-right: 50px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Team section .box .imgBx img{
+    width: 70vw;
+    height: 70vw;
+    
+    clip-path: polygon(5% 0, 95% 0, 95% 100%, 5% 100%);
+}
+#Team section .box .cntBx{
+    background: #C02425;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F0CB35, #C02425);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F0CB35, #C02425); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    border-radius: 5px;
+    overflow: visible;
+}
+
+#Team section .box .cntBx{
+    position: absolute;
+    height: 25vw;
+    width: 70vw;
+    bottom: 20vw;
+    display: grid;
+    place-items: center;
+}
+
+#Team section .box .cntBx .co{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#Team section .box .cntBx .co div{
+    margin: 2px;
+}
+
+#Team section .box .cntBx .co div.name{
+    font-size: 1.25em;
+    font-weight: 700;
+}
+
+#Team section .box .cntBx .co div.nickname{
+    font-size: 0.9em;
+}
+
+#Team section .box .cntBx .co div i{
+    font-size: 1.7em;
+    margin: 5px;
+    margin-top: 2px;
+}
+
+#Contact{
+
+}
+
+#Contact h1{
+    font-size: 2.5em;
+    text-align: center;
+}
+
+#Contact div p{
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.particletext{
+    display: none;
+}
+
+#Contact div a i{
+    font-size: 3em;
+    margin: 20px;
+}
+
+
+[data-scroll]{
+    transition: all 2s 0.3s;
+}
+
+[data-scroll="out"]{
+    opacity: 0;
+    transform: translate(0,60px);
+}
+[data-scroll="out"] span{
+    color: white;
+    transition: all 0.5s;
+}
+
+[data-scroll="in"]{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.members[data-scroll="out"]{
+    opacity: 1;
+    transform: translate(0,0);
+}
+.members[data-scroll="in"]{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+#Team h1::selection{
+    background-color: blueviolet;
+    color: black;
+}
+
+#Team h1 span{
+    color: blueviolet;
+}
+
+#abUs h1 span{
+    color: rgba(7, 73, 196,0.7);
+}
+/* #probState p::selection{
+    background-color: rgb(7, 196, 48);
+} */
+#Work h1 span{
+    color: rgb(202, 166, 4);
+}
+#Team h1 span{
+    color: rgb(196, 7, 149);
+}
+#Contact h1 span{
+    color: rgb(7, 196, 149);
+}
+
+

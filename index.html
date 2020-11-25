@@ -8,11 +8,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oxygen&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <!--stylesheets-->
-    <link rel="stylesheet" href="widescreen.css">
+    <base href="/">
+    <!-- <link rel="stylesheet" href="widescreen.css"> -->
     <script src="https://kit.fontawesome.com/dbe8c3ff0f.js" crossorigin="anonymous"></script>
     <!-- <link rel="stylesheet" href="assets/fontawesome-free-5.15.1-web/css/all.css"> -->
-    <!-- <link rel="stylesheet" media="screen and (min-width: 900px)" href="widescreen.css"> -->
-    <!-- <link rel="stylesheet" media="screen and (max-width: 600px)" href="smallscreen.css"> -->
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 900px)" href="widescreen.css">
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 600px)" href="smallscreen.css">
     <title>Cosmic Quarks</title>
     <link rel = "icon" href="assets/logo_darkbg.png" type = "image/x-icon">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
@@ -24,6 +25,13 @@
             else
                 $('.navs').removeClass('scrolled');
         });
+
+        if ( $(window).width() < 600) {
+                    $('.members').removeAttr('data-scroll');
+                 }
+             else {}
+
+
        /*  $(.navs).on('mousedown',function(){
                 $('.navs').addClass('navclick');
         });
@@ -41,6 +49,10 @@
 </head>
 <body>
     <nav>
+        <div id="NavClose">
+            <div> Close</div>
+        </div>
+        <div id="NavL">
         <ul>
             <li class="navs" id="Homelink"><a href="#Home">Hi!</a></li>
             <li class="navs" id="abUslink"><a href="#abUs">About Us</a></li>
@@ -49,6 +61,7 @@
             <li class="navs" id="Teamlink"><a href="#Team">The Team</a></li>
             <li class="navs" id="Contactlink"><a href="#Contact">Contact</a></li>
         </ul>
+    </div>
      </nav>
     <div id="particles-js">
         
@@ -56,10 +69,10 @@
    <!--Front Page-->
     <section class="sec" id="Home">
         <!-- <div id="particles-js"></div> -->
-        <div id="main-cosmic"></div>
-        <div id="main-quarks"></div>
+        <div class="particletext" id="main-cosmic"></div>
+        <div class="particletext" id="main-quarks"></div>
         <div id="logodiv"><img id="logo" src="assets/logo_darkbg.png" width="500" height="600"></div>
-        <div id="logodiv"><img id="logo2" src="assets/sserd.png"></div>
+        <div id="logo2div"><img id="logo2" src="assets/sserd.png"></div>
         <div id="shorttext">lorem ipsum :3</div>
     </section>
     <!--Pages-->
@@ -77,7 +90,7 @@
     </section>
     <section class="sec" id="Work">
         <h1 data-scroll>What have we <span>done</span>?</h1>
-        <p data-scroll>
+        <p data-scroll class="pc">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque deleniti cumque, numquam placeat iure, obcaecati corporis vitae nobis autem quaerat voluptas ad consequatur! Reiciendis iste, tempore excepturi facere atque fugiat.
             Non optio iusto minima quas expedita voluptates laboriosam, commodi accusantium repellat odio eum earum molestias delectus soluta porro perspiciatis, officiis laudantium, dolorem sint quidem labore! Mollitia molestias ipsam illum optio.
             Consequuntur nesciunt assumenda harum ullam, sapiente ipsum quod voluptate sequi veritatis enim unde iure. Nesciunt molestiae quasi, dolorum, temporibus, architecto nobis possimus facilis inventore porro ipsum quia optio consectetur ducimus.
@@ -98,6 +111,13 @@
             Vero recusandae quas vel dolorem minima excepturi quod explicabo sapiente doloribus, quisquam eum dolore sint libero ipsum sunt iure nostrum, quis temporibus tempora labore accusamus, enim reiciendis rerum quaerat. Minus!
             Quia aliquid fugiat non deleniti totam cupiditate aut, veniam in, sed quis atque minus possimus. Quos dolorum consequatur nobis. Adipisci impedit nesciunt expedita reiciendis. Ipsam id nulla atque? Facilis, excepturi.
             Eaque eligendi facere libero ab, laboriosam quidem tenetur veniam expedita recusandae totam quasi quos laudantium numquam! Quaerat eum, itaque vel temporibus aliquid autem quas rem. Doloribus maiores minima ipsum officiis?
+        </p>
+        <p data-scroll class="mob">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, vero sed quam officia quo ipsa sint dolor quis ullam totam unde a harum laudantium fugiat voluptatum recusandae aliquid illo repellat.
+            Esse suscipit alias eos perferendis illum quod iste officiis, optio ea enim praesentium sed minima dignissimos vero quibusdam tempore sint reprehenderit quae ex cumque nostrum natus! Quos odit velit deleniti.
+            Accusamus placeat earum eos laudantium voluptates dolore perferendis eaque magnam facere nemo fugit tempore ea ducimus tenetur sequi accusantium, neque voluptatum porro eius sed excepturi animi, soluta dignissimos? ficia quo ipsa sint dolor quis ullam totam unde a harum laudantium fugiat voluptatum recusandae aliquid illo repellat.
+            Esse suscipit alias eos perferendis illum quod iste officiis, optio ea enim praesentium sed minima dignissimos vero quibusdam tempore sint reprehenderit quae ex cumque nostrum natus! Quos odit velit deleniti.
+            Accusamus placeat earum eos laudantium voluptates dolore perferendis eaque magnam facere nemo fugit tempore ea ducimus tenetur sequi accusantium, neque voluptatum porro eius sed excepturi animi, soluta dignissimos? 
         </p>
         <div data-scroll id="Report">
             <a href="">Download our Report</a>
