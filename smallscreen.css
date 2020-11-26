@@ -75,23 +75,27 @@ nav{
     justify-content: center;
     align-items: center;
     margin: 20px;
-}
-
-#logo2{
     width: 20vw;
     height: 20vw;
 }
 
+#logo2{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
 #logodiv{
     position: absolute;
-    top: 30vw;
+    top: 10vw;
     width: 100vw;
     height: 100vw;
 }
 
 #logodiv img{
-    width: 100vw;
-    height: 100vw;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 #shorttext{
@@ -328,4 +332,69 @@ section{
     color: rgb(7, 196, 149);
 }
 
+#fun,#kwter{
+    display: none;
+}
 
+.furm{
+    height: 40vh;
+    font-family: 'Roboto Mono',monospace;
+}
+
+.furm form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#fname,#fmail{
+    width: 75vw;
+    padding: 10px;
+    margin: 10px;
+    background-color: black;
+    border: #a40606 2px solid;
+    border-radius: 20px;
+    font-family: inherit;
+}
+
+#fname:focus,#fmail:focus{
+    outline: transparent;
+}
+
+.inslabel{
+    font-size: 1.2rem;
+}
+
+#formsubmit input{
+    margin: 10px;
+    width: 16rem;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border-radius: 16px;
+    font-size: 1.2rem;
+    font-family: inherit;
+}
+
+::-webkit-scrollbar{
+    width: 7px;
+    overflow: visible;
+}
+
+::-webkit-scrollbar-track{
+    border: 2px solid rgba(255, 255, 255, 0.295);
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(45deg,rgb(9, 187, 48),rgb(188, 201, 10));
+}
+
+#Team section::-webkit-scrollbar{
+    height: 5px;
+}
+
+#Team section::-webkit-scrollbar-thumb{
+    background-color: blueviolet;
+}

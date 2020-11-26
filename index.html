@@ -12,8 +12,10 @@
     <!-- <link rel="stylesheet" href="widescreen.css"> -->
     <script src="https://kit.fontawesome.com/dbe8c3ff0f.js" crossorigin="anonymous"></script>
     <!-- <link rel="stylesheet" href="assets/fontawesome-free-5.15.1-web/css/all.css"> -->
+    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
     <link rel="stylesheet" type="text/css" media="screen and (min-width: 600px)" href="widescreen.css">
     <link rel="stylesheet" type="text/css" media="screen and (max-width: 600px)" href="smallscreen.css">
+    
     <title>Cosmic Quarks</title>
     <link rel = "icon" href="assets/logo_darkbg.png" type = "image/x-icon">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
@@ -46,6 +48,17 @@
         }; */
         
     </script>
+
+<noscript>
+    <style>
+      /**
+      * Reinstate scrolling for non-JS clients
+      */
+      .simplebar-content-wrapper {
+        overflow: auto;
+      }
+    </style>
+  </noscript>
 </head>
 <body>
     <nav>
@@ -119,9 +132,23 @@
             Esse suscipit alias eos perferendis illum quod iste officiis, optio ea enim praesentium sed minima dignissimos vero quibusdam tempore sint reprehenderit quae ex cumque nostrum natus! Quos odit velit deleniti.
             Accusamus placeat earum eos laudantium voluptates dolore perferendis eaque magnam facere nemo fugit tempore ea ducimus tenetur sequi accusantium, neque voluptatum porro eius sed excepturi animi, soluta dignissimos? 
         </p>
-        <div data-scroll id="Report">
+        <div data-scroll class="furm">
+            <form>
+                <div id="formname" class="ins">
+                    <label for="Name" class="inslabel">Name:</label><br>
+                    <input type="text" id="fname" name="name" placeholder="Space Boii"><br>
+                </div>
+                <div id="formmail" class="ins">
+                    <label for="Mail" class="inslabel">Mail id:</label><br>
+                    <input type="text" id="fmail" name="mail" placeholder="spaceboii@earth-kun.milkyway-kun">
+                </div>
+                <div id="formsubmit">
+                    <input type="submit" value="Download our Report">
+                </div>
+            </form>
+       <!--  <div data-scroll id="Report">
             <a href="">Download our Report</a>
-        </div>
+        </div> -->
     </section>
     <section id="fun">
         <h1 data-scroll="">A gallery of the fun we had <span>together</span>! <i class="fas fa-heart"></i></h1>
@@ -250,18 +277,19 @@
     <section class="sec" id="Team">
         <h1 data-scroll>The <span>Team</span></h1>
         <section>
-        <div data-scroll class="members" id="Kween">
+        
+        <div data-scroll class="members" id="Padmashree">
             <div class="box">
             <div class="imgBx">
-                <img src="assets/team/shradha.jpg" alt="">
+                <img src="assets/team/padmashree.jpg" alt="">
             </div>
             <div class="cntBx">
                 <div class="co">
-                    <div class="name">Shradha Ramakrishnan</div>
-                    <div class="nickname">Kween</div>
+                    <div class="name">Padmashree</div>
+                    <div class="nickname">Padmashree</div>
                     <div>
-                            <a href=""><i class="far fa-envelope"></i></a>
-                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a href=""><i class="far fa-envelope"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>
@@ -276,6 +304,7 @@
                 <div class="co">
                     <div class="name">Bhakti Mithagri</div>
                     <div class="nickname">Einstein</div>
+                    <div>Team Leader</div>
                     <div>
                         <a href=""><i class="far fa-envelope"></i></a>
                         <a href=""><i class="fab fa-linkedin-in"></i></a>
@@ -293,6 +322,7 @@
                 <div class="co">
                     <div class="name">Raj Panchal</div>
                     <div class="nickname">Sir Ji</div>
+                    <div>Team Leader</div>
                     <div>
                         <a href=""><i class="far fa-envelope"></i></a>
                         <a href=""><i class="fab fa-linkedin-in"></i></a>
@@ -309,262 +339,8 @@
             <div class="cntBx">
                 <div class="co">
                     <div class="name">Akshita Swaminathan</div>
-                    <div class="nickname">Kween</div>
-                    <div>
-                        <a href=""><i class="far fa-envelope"></i></a>
-                        <a href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div data-scroll class="members" id="Param">
-            <div class="box">
-            <div class="imgBx">
-                <img src="assets/team/param.jpg" alt="">
-            </div>
-            <div class="cntBx">
-                <div class="co">
-                    <div class="name">Parmeshwar Dewangan</div>
-                    <div class="nickname">Kween</div>
-                    <div>
-                        <a href=""><i class="far fa-envelope"></i></a>
-                        <a href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div data-scroll class="members" id="Snape">
-            <div class="box">
-            <div class="imgBx">
-                <img src="assets/team/manish.jpg" alt="">
-            </div>
-            <div class="cntBx">
-                <div class="co">
-                    <div class="name">Manish Kumar Das</div>
-                    <div class="nickname">Kween</div>
-                    <div>
-                        <a href=""><i class="far fa-envelope"></i></a>
-                        <a href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div data-scroll class="members" id="Adrian">
-            <div class="box">
-            <div class="imgBx">
-                <img src="assets/team/adhiraj.jpg" alt="">
-            </div>
-            <div class="cntBx">
-                <div class="co">
-                    <div class="name">Adhiraj Bhagawati</div>
-                    <div class="nickname">Kween</div>
-                    <div>
-                        <a href=""><i class="far fa-envelope"></i></a>
-                        <a href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div data-scroll class="members" id="mathBoi">
-            <div class="box">
-            <div class="imgBx">
-                <img src="assets/team/saisish.jpg" alt="">
-            </div>
-            <div class="cntBx">
-                <div class="co">
-                    <div class="name">Sahasransu Mohanty</div>
-                    <div class="nickname">Kween</div>
-                    <div>
-                        <a href=""><i class="far fa-envelope"></i></a>
-                        <a href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div data-scroll class="members" id="Rutanshi">
-            <div class="box">
-            <div class="imgBx">
-                <img src="assets/team/rutanshi.jpeg" alt="">
-            </div>
-            <div class="cntBx">
-                <div class="co">
-                    <div class="name">Rutanshi Pradhan</div>
-                    <div class="nickname">Kween</div>
-                    <div>
-                        <a href=""><i class="far fa-envelope"></i></a>
-                        <a href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div data-scroll class="members" id="Ashika">
-            <div class="box">
-            <div class="imgBx">
-                <img src="assets/team/Ashika.jpg" alt="">
-            </div>
-            <div class="cntBx">
-                <div class="co">
-                    <div class="name">Ashika A</div>
-                    <div class="nickname">Kween</div>
-                    <div>
-                        <a href=""><i class="far fa-envelope"></i></a>
-                        <a href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div data-scroll class="members" id="Sree">
-            <div class="box">
-            <div class="imgBx">
-                <img src="assets/team/sreeranjini.jpg" alt="">
-            </div>
-            <div class="cntBx">
-                <div class="co">
-                    <div class="name">Sreeranjini P U</div>
-                    <div class="nickname">Kween</div>
-                    <div>
-                        <a href=""><i class="far fa-envelope"></i></a>
-                        <a href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div data-scroll class="members" id="Alice">
-            <div class="box">
-            <div class="imgBx">
-                <img src="assets/team/Alice.jpg" alt="">
-            </div>
-            <div class="cntBx">
-                <div class="co">
-                    <div class="name">Alice</div>
-                    <div class="nickname">Kween</div>
-                    <div>
-                        <a href=""><i class="far fa-envelope"></i></a>
-                        <a href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div data-scroll class="members" id="sruthi">
-            <div class="box">
-            <div class="imgBx">
-                <img src="assets/team/sruthi.jpg" alt="">
-            </div>
-            <div class="cntBx">
-                <div class="co">
-                    <div class="name">Sruthi P V</div>
-                    <div class="nickname">Kween</div>
-                    <div>
-                        <a href=""><i class="far fa-envelope"></i></a>
-                        <a href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div data-scroll class="members" id="Syamadas">
-            <div class="box">
-            <div class="imgBx">
-                <img src="assets/team/syamadas.jpg" alt="">
-            </div>
-            <div class="cntBx">
-                <div class="co">
-                    <div class="name">S Syamadas</div>
-                    <div class="nickname">Kween</div>
-                    <div>
-                        <a href=""><i class="far fa-envelope"></i></a>
-                        <a href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div data-scroll class="members" id="Keerthi">
-            <div class="box">
-            <div class="imgBx">
-                <img src="assets/team/keerthi.jpg" alt="">
-            </div>
-            <div class="cntBx">
-                <div class="co">
-                    <div class="name">Keerthi P S</div>
-                    <div class="nickname">Kween</div>
-                    <div>
-                        <a href=""><i class="far fa-envelope"></i></a>
-                        <a href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div data-scroll class="members" id="Sahasra">
-            <div class="box">
-            <div class="imgBx">
-                <img src="assets/team/sahasra.jpg" alt="">
-            </div>
-            <div class="cntBx">
-                <div class="co">
-                    <div class="name">Sahasra S</div>
-                    <div class="nickname">Kween</div>
-                    <div>
-                        <a href=""><i class="far fa-envelope"></i></a>
-                        <a href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div data-scroll class="members" id="Aswathi">
-            <div class="box">
-            <div class="imgBx">
-                <img src="assets/team/aswathi.jpg" alt="">
-            </div>
-            <div class="cntBx">
-                <div class="co">
-                    <div class="name">Aswathi P S</div>
-                    <div class="nickname">Kween</div>
-                    <div>
-                        <a href=""><i class="far fa-envelope"></i></a>
-                        <a href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div data-scroll class="members" id="Suneet">
-            <div class="box">
-            <div class="imgBx">
-                <img src="assets/team/suneet.jpg" alt="">
-            </div>
-            <div class="cntBx">
-                <div class="co">
-                    <div class="name">Suneet Ranjan Khuntia</div>
-                    <div class="nickname">Kween</div>
-                    <div>
-                        <a href=""><i class="far fa-envelope"></i></a>
-                        <a href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div data-scroll class="members" id="Padmashree">
-            <div class="box">
-            <div class="imgBx">
-                <img src="assets/team/padmashree.jpg" alt="">
-            </div>
-            <div class="cntBx">
-                <div class="co">
-                    <div class="name">Padmashree</div>
-                    <div class="nickname">Kween</div>
+                    <div class="nickname">Mrs. Perfectionist</div>
+                    <div>Team Leader</div>
                     <div>
                         <a href=""><i class="far fa-envelope"></i></a>
                         <a href=""><i class="fab fa-linkedin-in"></i></a>
@@ -581,7 +357,7 @@
             <div class="cntBx">
                 <div class="co">
                     <div class="name">Apoorv Tripathi</div>
-                    <div class="nickname">Kween</div>
+                    <div class="nickname">Apoorv</div>
                     <div>
                         <a href=""><i class="far fa-envelope"></i></a>
                         <a href=""><i class="fab fa-linkedin-in"></i></a>
@@ -590,6 +366,263 @@
             </div>
             </div>
         </div>
+        <div data-scroll class="members" id="Kween">
+            <div class="box">
+            <div class="imgBx">
+                <img src="assets/team/shradha.jpg" alt="">
+            </div>
+            <div class="cntBx">
+                <div class="co">
+                    <div class="name">Shradha Ramakrishnan</div>
+                    <div class="nickname">Kween</div>
+                    <div>
+                            <a href=""><i class="far fa-envelope"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div data-scroll class="members" id="Param">
+            <div class="box">
+            <div class="imgBx">
+                <img src="assets/team/param.jpg" alt="">
+            </div>
+            <div class="cntBx">
+                <div class="co">
+                    <div class="name">Parmeshwar Dewangan</div>
+                    <div class="nickname">Param</div>
+                    <div>
+                        <a href=""><i class="far fa-envelope"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div data-scroll class="members" id="Snape">
+            <div class="box">
+            <div class="imgBx">
+                <img src="assets/team/manish.jpg" alt="">
+            </div>
+            <div class="cntBx">
+                <div class="co">
+                    <div class="name">Manish Kumar Das</div>
+                    <div class="nickname">Prof. Snape</div>
+                    <div>
+                        <a href=""><i class="far fa-envelope"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div data-scroll class="members" id="Adrian">
+            <div class="box">
+            <div class="imgBx">
+                <img src="assets/team/adhiraj.jpg" alt="">
+            </div>
+            <div class="cntBx">
+                <div class="co">
+                    <div class="name">Adhiraj Bhagawati</div>
+                    <div class="nickname">Adrian boi</div>
+                    <div>
+                        <a href=""><i class="far fa-envelope"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div data-scroll class="members" id="mathBoi">
+            <div class="box">
+            <div class="imgBx">
+                <img src="assets/team/saisish.jpg" alt="">
+            </div>
+            <div class="cntBx">
+                <div class="co">
+                    <div class="name">Sahasransu Mohanty</div>
+                    <div class="nickname">Math boi</div>
+                    <div>
+                        <a href=""><i class="far fa-envelope"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div data-scroll class="members" id="Rutanshi">
+            <div class="box">
+            <div class="imgBx">
+                <img src="assets/team/rutanshi.jpeg" alt="">
+            </div>
+            <div class="cntBx">
+                <div class="co">
+                    <div class="name">Rutanshi Pradhan</div>
+                    <div class="nickname">The Sweet Doctor</div>
+                    <div>
+                        <a href=""><i class="far fa-envelope"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div data-scroll class="members" id="Ashika">
+            <div class="box">
+            <div class="imgBx">
+                <img src="assets/team/Ashika.jpg" alt="">
+            </div>
+            <div class="cntBx">
+                <div class="co">
+                    <div class="name">Ashika A</div>
+                    <div class="nickname">Ashi</div>
+                    <div>
+                        <a href=""><i class="far fa-envelope"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div data-scroll class="members" id="Sree">
+            <div class="box">
+            <div class="imgBx">
+                <img src="assets/team/sreeranjini.jpg" alt="">
+            </div>
+            <div class="cntBx">
+                <div class="co">
+                    <div class="name">Sreeranjini P U</div>
+                    <div class="nickname">Sree</div>
+                    <div>
+                        <a href=""><i class="far fa-envelope"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div data-scroll class="members" id="Alice">
+            <div class="box">
+            <div class="imgBx">
+                <img src="assets/team/Alice.jpg" alt="">
+            </div>
+            <div class="cntBx">
+                <div class="co">
+                    <div class="name">Alice</div>
+                    <div class="nickname">Alice in Wonderland</div>
+                    <div>
+                        <a href=""><i class="far fa-envelope"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div data-scroll class="members" id="sruthi">
+            <div class="box">
+            <div class="imgBx">
+                <img src="assets/team/sruthi.jpg" alt="">
+            </div>
+            <div class="cntBx">
+                <div class="co">
+                    <div class="name">Sruthi P V</div>
+                    <div class="nickname">Sruthi</div>
+                    <div>
+                        <a href=""><i class="far fa-envelope"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div data-scroll class="members" id="Syamadas">
+            <div class="box">
+            <div class="imgBx">
+                <img src="assets/team/syamadas.jpg" alt="">
+            </div>
+            <div class="cntBx">
+                <div class="co">
+                    <div class="name">S Syamadas</div>
+                    <div class="nickname">Syama</div>
+                    <div>
+                        <a href=""><i class="far fa-envelope"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div data-scroll class="members" id="Keerthi">
+            <div class="box">
+            <div class="imgBx">
+                <img src="assets/team/keerthi.jpg" alt="">
+            </div>
+            <div class="cntBx">
+                <div class="co">
+                    <div class="name">Keerthi P S</div>
+                    <div class="nickname">Human Calculator</div>
+                    <div>
+                        <a href=""><i class="far fa-envelope"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div data-scroll class="members" id="Sahasra">
+            <div class="box">
+            <div class="imgBx">
+                <img src="assets/team/sahasra.jpg" alt="">
+            </div>
+            <div class="cntBx">
+                <div class="co">
+                    <div class="name">Sahasra S</div>
+                    <div class="nickname">Sahasra</div>
+                    <div>
+                        <a href=""><i class="far fa-envelope"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div data-scroll class="members" id="Aswathi">
+            <div class="box">
+            <div class="imgBx">
+                <img src="assets/team/aswathi.jpg" alt="">
+            </div>
+            <div class="cntBx">
+                <div class="co">
+                    <div class="name">Aswathi P S</div>
+                    <div class="nickname">Ashlien</div>
+                    <div>
+                        <a href=""><i class="far fa-envelope"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div data-scroll class="members" id="Suneet">
+            <div class="box">
+            <div class="imgBx">
+                <img src="assets/team/suneet.jpg" alt="">
+            </div>
+            <div class="cntBx">
+                <div class="co">
+                    <div class="name">Suneet Ranjan Khuntia</div>
+                    <div class="nickname">Suneet</div>
+                    <div>
+                        <a href=""><i class="far fa-envelope"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        
+       
         
 
        
@@ -604,6 +637,7 @@
         </div>
     </section>
     <!--scripts-->
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
     <script src="assets/particles.js"></script> 
     <script src="assets/app.js"></script>
     <script src="assets/Blotter/build/blotter.js"></script>
