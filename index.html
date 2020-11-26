@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="assets/pace.min.js"></script>
     <!--fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oxygen&display=swap" rel="stylesheet"> 
@@ -13,8 +14,11 @@
     <script src="https://kit.fontawesome.com/dbe8c3ff0f.js" crossorigin="anonymous"></script>
     <!-- <link rel="stylesheet" href="assets/fontawesome-free-5.15.1-web/css/all.css"> -->
     <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
-    <link rel="stylesheet" type="text/css" media="screen and (min-width: 600px)" href="widescreen.css">
-    <link rel="stylesheet" type="text/css" media="screen and (max-width: 600px)" href="smallscreen.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 600px)" href=".\widescreen.css">
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 600px)" href=".\smallscreen.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery-bez@1.0.11/src/jquery.bez.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
     
     <title>Cosmic Quarks</title>
     <link rel = "icon" href="assets/logo_darkbg.png" type = "image/x-icon">
@@ -46,6 +50,15 @@
         if ($(.navs).mouseup()){
                 $('.navs').addClass('navclick');
         }; */
+
+        function openNav() {
+  document.getElementById("mySidenav").style.width = "90vw";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+} 
         
     </script>
 
@@ -61,7 +74,16 @@
   </noscript>
 </head>
 <body>
-    <nav>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#Home" onclick="closeNav()">Home</a>
+        <a href="#abUs" onclick="closeNav()">About Us</a>
+        <a href="#Work" onclick="closeNav()">Work</a>
+        <a href="#DownRep" onclick="closeNav()">Download Report</a>
+        <a href="#Team" onclick="closeNav()">Team</a>
+        <a href="#Contact" onclick="closeNav()">Reach Out</a>
+      </div>
+    <nav id="navbar">
         <div id="NavClose">
             <div> Close</div>
         </div>
@@ -76,6 +98,8 @@
         </ul>
     </div>
      </nav>
+
+     <span class="openmenu" onclick="openNav()"><img src="assets/navopen.svg"></span>
     <div id="particles-js">
         
     </div>
@@ -132,7 +156,7 @@
             Esse suscipit alias eos perferendis illum quod iste officiis, optio ea enim praesentium sed minima dignissimos vero quibusdam tempore sint reprehenderit quae ex cumque nostrum natus! Quos odit velit deleniti.
             Accusamus placeat earum eos laudantium voluptates dolore perferendis eaque magnam facere nemo fugit tempore ea ducimus tenetur sequi accusantium, neque voluptatum porro eius sed excepturi animi, soluta dignissimos? 
         </p>
-        <div data-scroll class="furm">
+        <div id="DownRep" data-scroll class="furm">
             <form>
                 <div id="formname" class="ins">
                     <label for="Name" class="inslabel">Name:</label><br>
@@ -306,8 +330,8 @@
                     <div class="nickname">Einstein</div>
                     <div>Team Leader</div>
                     <div>
-                        <a href=""><i class="far fa-envelope"></i></a>
-                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:bhakti.mithagri.bm@gmail.com"><i class="far fa-envelope"></i></a>
+                        <a href="linkedin.com/in/bhakti-mithagri-603b58194"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>
@@ -324,8 +348,8 @@
                     <div class="nickname">Sir Ji</div>
                     <div>Team Leader</div>
                     <div>
-                        <a href=""><i class="far fa-envelope"></i></a>
-                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:raj.mpstme7@gmail.com"><i class="far fa-envelope"></i></a>
+                        <a href="http://linkedin.com/in/raj-panchal-9105b81a3"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>
@@ -342,8 +366,8 @@
                     <div class="nickname">Mrs. Perfectionist</div>
                     <div>Team Leader</div>
                     <div>
-                        <a href=""><i class="far fa-envelope"></i></a>
-                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:akshitasgs@gmail.com"><i class="far fa-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/akshita-swaminathan-73107b141"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>
@@ -359,7 +383,7 @@
                     <div class="name">Apoorv Tripathi</div>
                     <div class="nickname">Apoorv</div>
                     <div>
-                        <a href=""><i class="far fa-envelope"></i></a>
+                        <a href="mailto:someone@example.com?Subject=Hello%20again"><i class="far fa-envelope"></i></a>
                         <a href=""><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
@@ -376,8 +400,8 @@
                     <div class="name">Shradha Ramakrishnan</div>
                     <div class="nickname">Kween</div>
                     <div>
-                            <a href=""><i class="far fa-envelope"></i></a>
-                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a href="mailto:shradha7250@gmail.com"><i class="far fa-envelope"></i></a>
+                            <!-- <a href=""><i class="fab fa-linkedin-in"></i></a> -->
                     </div>
                 </div>
             </div>
@@ -393,8 +417,8 @@
                     <div class="name">Parmeshwar Dewangan</div>
                     <div class="nickname">Param</div>
                     <div>
-                        <a href=""><i class="far fa-envelope"></i></a>
-                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:parmeshwardewangon@gmail.com"><i class="far fa-envelope"></i></a>
+                        <!-- <a href=""><i class="fab fa-linkedin-in"></i></a> -->
                     </div>
                 </div>
             </div>
@@ -410,8 +434,8 @@
                     <div class="name">Manish Kumar Das</div>
                     <div class="nickname">Prof. Snape</div>
                     <div>
-                        <a href=""><i class="far fa-envelope"></i></a>
-                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:ammanishkumardas@gmail.com"><i class="far fa-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/manish-kumar-das-118752192"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>
@@ -427,8 +451,8 @@
                     <div class="name">Adhiraj Bhagawati</div>
                     <div class="nickname">Adrian boi</div>
                     <div>
-                        <a href=""><i class="far fa-envelope"></i></a>
-                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:adhirajquantum1@gmail.com"><i class="far fa-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/adhiraj-bhagawati-b86426149"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>
@@ -444,8 +468,8 @@
                     <div class="name">Sahasransu Mohanty</div>
                     <div class="nickname">Math boi</div>
                     <div>
-                        <a href=""><i class="far fa-envelope"></i></a>
-                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:sahasransumohanty@gmail.com"><i class="far fa-envelope"></i></a>
+                        <a href="www.linkedin.com/in/saisish-sahasransu"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>
@@ -461,8 +485,8 @@
                     <div class="name">Rutanshi Pradhan</div>
                     <div class="nickname">The Sweet Doctor</div>
                     <div>
-                        <a href=""><i class="far fa-envelope"></i></a>
-                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:rutanshipradhan@gmail.com"><i class="far fa-envelope"></i></a>
+                        <a href="www.linkedin.com/in/rutanshi-pradhan-4352831b2"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>
@@ -478,8 +502,8 @@
                     <div class="name">Ashika A</div>
                     <div class="nickname">Ashi</div>
                     <div>
-                        <a href=""><i class="far fa-envelope"></i></a>
-                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:ashikaachuth@gmail.com"><i class="far fa-envelope"></i></a>
+                        <!-- <a href=""><i class="fab fa-linkedin-in"></i></a> -->
                     </div>
                 </div>
             </div>
@@ -495,8 +519,8 @@
                     <div class="name">Sreeranjini P U</div>
                     <div class="nickname">Sree</div>
                     <div>
-                        <a href=""><i class="far fa-envelope"></i></a>
-                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:sreeranjinipu1999@gmail.com"><i class="far fa-envelope"></i></a>
+                        <!-- <a href=""><i class="fab fa-linkedin-in"></i></a> -->
                     </div>
                 </div>
             </div>
@@ -512,8 +536,8 @@
                     <div class="name">Alice</div>
                     <div class="nickname">Alice in Wonderland</div>
                     <div>
-                        <a href=""><i class="far fa-envelope"></i></a>
-                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:aliceinbaraj123@gmail.com"><i class="far fa-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/alice-45b0a219b"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>
@@ -529,8 +553,8 @@
                     <div class="name">Sruthi P V</div>
                     <div class="nickname">Sruthi</div>
                     <div>
-                        <a href=""><i class="far fa-envelope"></i></a>
-                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a href="sruthipv2000@gmail.com"><i class="far fa-envelope"></i></a>
+                        <!-- <a href=""><i class="fab fa-linkedin-in"></i></a> -->
                     </div>
                 </div>
             </div>
@@ -546,8 +570,8 @@
                     <div class="name">S Syamadas</div>
                     <div class="nickname">Syama</div>
                     <div>
-                        <a href=""><i class="far fa-envelope"></i></a>
-                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:syamadas80@gmail.com"><i class="far fa-envelope"></i></a>
+                        <!-- <a href=""><i class="fab fa-linkedin-in"></i></a> -->
                     </div>
                 </div>
             </div>
@@ -563,8 +587,8 @@
                     <div class="name">Keerthi P S</div>
                     <div class="nickname">Human Calculator</div>
                     <div>
-                        <a href=""><i class="far fa-envelope"></i></a>
-                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:keerthips09@gmail.com"><i class="far fa-envelope"></i></a>
+                        <!-- <a href=""><i class="fab fa-linkedin-in"></i></a> -->
                     </div>
                 </div>
             </div>
@@ -580,8 +604,8 @@
                     <div class="name">Sahasra S</div>
                     <div class="nickname">Sahasra</div>
                     <div>
-                        <a href=""><i class="far fa-envelope"></i></a>
-                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:sahasrasunil20@gmail.com"><i class="far fa-envelope"></i></a>
+                        <!-- <a href=""><i class="fab fa-linkedin-in"></i></a> -->
                     </div>
                 </div>
             </div>
@@ -597,8 +621,8 @@
                     <div class="name">Aswathi P S</div>
                     <div class="nickname">Ashlien</div>
                     <div>
-                        <a href=""><i class="far fa-envelope"></i></a>
-                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:aswathipampurayam@gmail.com"><i class="far fa-envelope"></i></a>
+                        <!-- <a href=""><i class="fab fa-linkedin-in"></i></a> -->
                     </div>
                 </div>
             </div>
@@ -614,8 +638,8 @@
                     <div class="name">Suneet Ranjan Khuntia</div>
                     <div class="nickname">Suneet</div>
                     <div>
-                        <a href=""><i class="far fa-envelope"></i></a>
-                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:suneet10khuntia@gmail.com"><i class="far fa-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/suneet-ranjan-khuntia-5733a0169"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>
@@ -630,10 +654,9 @@
     </section>
     <section class="sec" id="Contact">
         <h1 data-scroll><span>Reach</span> out</h1>
-        <div data-scroll><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta beatae, labore esse totam cum inventore nesciunt voluptas aperiam eius explicabo sapiente harum repellendus laudantium id, itaque at! Nemo, nobis aliquid.</p></div>
+        <div data-scroll><p>We are really enthusiastic and hopeful to talk with you and exchange ideas, recieve feedback and answer queries. Please feel free to drop a message using any of the mediums below. <span>It was nice meeting you.</span> Themks xD</p></div>
         <div data-scroll>
-            <a href=""><i class="far fa-envelope"></i></a>
-            <a href=""><i class="far fa-envelope"></i></a>
+            <a href="mailto:shradha7250@gmail.com;suneet10khuntia@gmail.com;rutanshipradhan@gmail.com;sahasransumohanty@gmail.com;bhakti.mithagri.bm@gmail.com;sreeranjinipu1999@gmail.com;aswathipampurayam@gmail.com;sahasrasunil20@gmail.com;sahasrasunil20@gmail.com;keerthips09@gmail.com;syamadas80@gmail.com;ashikaachuth@gmail.com;sruthipv2000@gmail.com;parmeshwardewangon@gmail.com;akshitasgs@gmail.com;adhirajquantum1@gmail.com;raj.mpstme7@gmail.com;ammanishkumardas@gmail.com"><i class="far fa-envelope"></i></a>
         </div>
     </section>
     <!--scripts-->
