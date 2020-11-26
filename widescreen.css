@@ -195,7 +195,7 @@ nav ul li{
 
 
 section{
-    height: 100vh;
+    
     width: 100vw;
     background-color: rgba(0, 0, 0, 0);
     position: relative;
@@ -209,6 +209,7 @@ section{
 
 #abUs{
     display: flex;
+    height: 100vh;
     flex-direction: column;
     justify-content:center;
     align-items: center;
@@ -225,20 +226,21 @@ section{
     color: rgb(79, 9, 136);
 } */
 
-#probState{
+#Theory{
     /* top: 200vh; */
     display: flex;
+    height: 100vh;
     flex-direction: column;
     justify-content:center;
     align-items: center;
     font-size: 1.3rem;
 }
 
-#probState h1{
+#Theory h1{
     font-size: 3rem;
     margin: 50px;
 }
-/* #probState h1 span{
+/* #Theory h1 span{
     color: rgb(79, 9, 136);
 } */
 #Work{
@@ -253,8 +255,8 @@ section{
 
 #Work h1{
     font-size: 3rem;
-    margin: 50px;
-    height: 5em;
+    /* margin: 50px; */
+    height: 5rem;
 }
 /* #Work h1 span{
     color: rgb(79, 9, 136);
@@ -283,6 +285,14 @@ section h1 span::selection{
     color: black;
     box-shadow: 7px 7px rgb(148, 7, 7);
     transform: translate(-5px,-5px) scale(0.9);
+}
+
+#Home{
+    height: 100vh;
+}
+
+#Contact{
+    height: 100vh;
 }
 
 #Team h1{
@@ -334,7 +344,7 @@ section p{
     font-size: 1.7rem;
     /* box-shadow: 10px 10px blue; */
 }
-#probState p{
+#Theory p{
 /*     border: solid 2px rgb(7, 196, 48);
  */    padding: 20px;
     border-radius: 40px;
@@ -362,7 +372,7 @@ section p{
 #abUs p::selection{
     background-color: rgba(7, 73, 196,0.7);
 }
-#probState p::selection{
+#Theory p::selection{
     background-color: rgb(7, 196, 48);
 }
 #Work p::selection{
@@ -380,7 +390,7 @@ section p{
     color: rgb(7, 73, 196);
     transition: all 2.3s ;
 }
-#probState [data-scroll="in"] span{
+#Theory [data-scroll="in"] span{
     color: rgb(7, 196, 48);
     transition: all 2.3s ;
 }
@@ -421,10 +431,10 @@ h1,p{
     color: white ;
     background-color: rgb(7, 73, 196);
 }
-#probState h1::selection{
+#Theory h1::selection{
     background-color: rgb(7, 196, 48) ;
 }
-#probState h1 span::selection{
+#Theory h1 span::selection{
     color: white ;
     background-color: rgb(7, 196, 48);
 }
@@ -607,16 +617,19 @@ h1,p{
     padding: 5px;
     font-size: 1.4em;
     transition: 0.5s ease;
+    border: 2px solid rgba(0, 0, 0, 0);
 }
 
 .co div i:hover{
     color: black;
     overflow: visible;
+    border: rgba(7, 73, 196,1);
 }
 
 .co div.name{
     text-align: center;
     font-size: 1.5em;
+    font-weight: 800;
 }
 
 #Team h1 span{
@@ -766,5 +779,187 @@ section#Contact div p::selection{
     color: black;
 }
 
+#Work{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.mob{
+    display: none;
+}
+
+#fun{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+}
+
+#fun h1{
+    position: absolute;
+    font-size: 3em;
+    overflow: visible;
+    padding: 3px;
+    top: 0;
+}
+
+#fun h1 i{
+    overflow: visible;
+}
+
+#fun h1 span{
+    color: red;
+}
+
+.slidershow{
+    width: 80vw;
+    height: 70vh;
+    overflow: hidden;
+  }
+  .middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .navigation{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+  }
+  .bar{
+    width: 50px;
+    height: 10px;
+    border: 2px solid #fff;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  .bar:hover{
+    background: #fff;
+  }
+  
+  input[name="r"]{
+      position: absolute;
+      visibility: hidden;
+  }
+  
+  .slides{
+    width: 2000%;
+    height: 100%;
+    display: flex;
+  }
+  
+  .slide{
+    width: 5%;
+    transition: 0.6s;
+    overflow: visible;
+    display: grid;
+    place-items: center;
+  }
+  .slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  #r1:checked ~ .s1{
+    margin-left: 0;
+  }
+  #r2:checked ~ .s1{
+    margin-left: -5%;
+  }
+  #r3:checked ~ .s1{
+    margin-left: -10%;
+  }
+  #r4:checked ~ .s1{
+    margin-left: -15%;
+  }
+  #r5:checked ~ .s1{
+    margin-left: -20%;
+  }
+  #r6:checked ~ .s1{
+    margin-left: -25%;
+  }
+  #r7:checked ~ .s1{
+    margin-left: -30%;
+  }
+  #r8:checked ~ .s1{
+    margin-left: -35%;
+  }
+  #r9:checked ~ .s1{
+    margin-left: -40%;
+  }
+  #r10:checked ~ .s1{
+    margin-left: -45%;
+  }
+  #r11:checked ~ .s1{
+    margin-left: -50%;
+  }
+  #r12:checked ~ .s1{
+    margin-left: -55%;
+  }
+  #r13:checked ~ .s1{
+    margin-left: -60%;
+  }
+  #r14:checked ~ .s1{
+    margin-left: -65%;
+  }
+  #r15:checked ~ .s1{
+    margin-left: -70%;
+  }
+  #r16:checked ~ .s1{
+    margin-left: -75%;
+  }
+  #r17:checked ~ .s1{
+    margin-left: -80%;
+  }
+  #r18:checked ~ .s1{
+    margin-left: -85%;
+  }
+  #r19:checked ~ .s1{
+    margin-left: -90%;
+  }
+  #r20:checked ~ .s1{
+    margin-left: -95%;
+  }
+
+  #kwter{
+      height: 100vh;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+
+  }
+
+  #kwter h1{
+      position: absolute;
+      top: 40px;
+      width: 100vw;
+      font-size: 3rem;
+      text-align: center;
+  }
+
+  #kwter h1 span{
+      color: #f00000;
+      font-weight: 800;
+  }
+
+  #kwter div{
+      width: 40vw;
+      height: 50vh;
+      box-shadow: #a40606 -2px -2px;
+      margin: auto;
+      overflow: visible;
+  }
+
+  #kwter div video{
+      height: 100%;
+  }
 

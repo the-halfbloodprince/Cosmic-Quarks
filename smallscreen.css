@@ -47,7 +47,7 @@ nav{
     font-size: 1.7em;
 }
 
-.navs#probStatelink{
+.navs#Theorylink{
     display: none;
 }
 
@@ -127,7 +127,7 @@ section{
     margin-top: 40px;
 }
 
-#probState{
+#Theory{
     display: none;
 }
 
@@ -315,7 +315,7 @@ section{
 #abUs h1 span{
     color: rgba(7, 73, 196,0.7);
 }
-/* #probState p::selection{
+/* #Theory p::selection{
     background-color: rgb(7, 196, 48);
 } */
 #Work h1 span{
