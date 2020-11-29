@@ -161,7 +161,9 @@ section{
 }
 
 .pc{
-    display: none;
+    margin: 30px;
+    text-align: center;
+    font-size: 1.5rem;
 }
 
 .mob{
@@ -244,7 +246,7 @@ section{
     position: absolute;
     height: 25vw;
     width: 70vw;
-    bottom: 20vw;
+    bottom: 20px;
     display: grid;
     place-items: center;
 }
@@ -358,7 +360,7 @@ section{
     display: none;
 }
 
-.furm{
+/* .furm{
     height: 40vh;
     font-family: 'Roboto Mono',monospace;
 }
@@ -399,7 +401,7 @@ section{
     font-size: 1.2rem;
     font-family: inherit;
 }
-
+ */
 ::-webkit-scrollbar{
     width: 7px;
     overflow: visible;
@@ -469,3 +471,60 @@ section{
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
+
+  .mob{
+      width: 100vw;
+      object-fit: contain;
+  }
+
+  .mob img{
+        width: 80vw;
+  }
+
+  .Syss{
+    margin: 2rem;
+    font-size: 2em;
+    color: rgb(202, 166, 4);
+    overflow: visible;
+    padding: 5px;
+}
+
+.Syss::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: rgb(202, 166, 4);
+}
+
+.imgswork{
+    width: 80vw;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+#Simulation p{
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+#Simulation video{
+    width: 80vw;
+    object-fit: contain;
+    margin: 20px;
+    height: auto;
+}
+
+#shorttext{
+    position: absolute;
+    text-align: center;
+    font-size: 1.1rem;
+    bottom: 75px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #b4b4b4;
+}
