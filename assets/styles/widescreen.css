@@ -14,18 +14,10 @@
 
 body{
     background-color: black;
-    /* font-family: 'Roboto Mono', monospace; */
     font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
     overflow: hidden;
-    /* scroll-snap-type: y mandatory; */
 }
-
-/*Anim Starts*/
-
-/*Anim Ends*/
-
-
 
 a{
     text-decoration: none;
@@ -79,8 +71,6 @@ nav{
     position: fixed;
     top: 0;
     left: 0;
-    /* display: flex;
-    flex-direction: row; */
     padding: 10px 0 5px 0;
     padding-left: 30vw;
     width: 100vw;
@@ -88,7 +78,6 @@ nav{
     padding-right: 25px;
     background-color: rgba(0, 0, 0, 0);
     color: rgb(160, 160, 160);
-    /* font-family: 'Roboto Mono', monospace; */
     font-family: 'Montserrat', sans-serif;
     z-index: 10000;
     transition: all 0.5s ease;
@@ -97,14 +86,6 @@ nav{
 #NavClose{
     display: none;
 }
-/* nav.scrolled{
-    
-    font-size: 0.8em;
-    transform-origin: right;
-    
-    background-color: rgba(21, 255, 0, 0.644);
-
-} */
 
 nav ul{
     display: flex;
@@ -140,31 +121,10 @@ nav ul li{
     color: rgb(235, 235, 235);
 }
 
-/* .navs::after {
-    content: ' ';
-    height: 2px;
-    border-radius: 4px;
-    width: 100%;
-    position: relative;
-    display: block;
-    color: antiquewhite;
-    background-color: antiquewhite;
-    bottom: 0px;
-    transform-origin: left;
-    transform: scale(0);
-    transition: 0.5s ease;
-}
-
 .navs:hover::after {
     transform: scale(1);
 } */
 
-/* 
-#Home{
-    width: 100vw;
-    height: 100vh;
-    background-color: rgb(0, 0, 0);
-} */
 
 #logo{
     position: absolute;
@@ -196,10 +156,7 @@ nav ul li{
     background-color: rgba(0, 0, 0, 0);
 }
 
-
-
 section{
-    
     width: 100vw;
     background-color: rgba(0, 0, 0, 0);
     position: relative;
@@ -208,7 +165,6 @@ section{
     overflow-y: hidden;
     scroll-snap-align: start;
     transform-style: preserve-3d;
-    
 }
 
 #abUs{
@@ -217,21 +173,15 @@ section{
     flex-direction: column;
     justify-content:center;
     align-items: center;
-    /* top: 100vh; */
     font-size: 1.3rem;
-    /* scroll-snap-align: start; */
 }
 
 #abUs h1{
     font-size: 3rem;
     margin: 50px;
 }
-/* #abUs h1 span{
-    color: rgb(79, 9, 136);
-} */
 
 #Theory{
-    /* top: 200vh; */
     display: flex;
     height: 100vh;
     flex-direction: column;
@@ -244,12 +194,8 @@ section{
     font-size: 3rem;
     margin: 50px;
 }
-/* #Theory h1 span{
-    color: rgb(79, 9, 136);
-} */
+
 #Work{
-    /* top: 300vh; */
-    /* height: 200vh; */
     display: flex;
     flex-direction: column;
     justify-content:center;
@@ -259,13 +205,8 @@ section{
 
 #Work h1{
     font-size: 3rem;
-    /* margin: 50px; */
     height: 5rem;
 }
-/* #Work h1 span{
-    color: rgb(79, 9, 136);
-    margin: 30px;
-} */
 
 section h1 span::selection{
     color: white;
@@ -342,35 +283,26 @@ section p{
 }
 
 #abUs p{
-    /* border: solid 2px rgb(7, 73, 196); */
     padding: 20px;
     border-radius: 40px;
     font-size: 1.7rem;
-    /* box-shadow: 10px 10px blue; */
 }
 #Theory p{
-/*     border: solid 2px rgb(7, 196, 48);
- */    padding: 20px;
-    border-radius: 40px;
-    font-size: 1.7rem;
-
-    /* box-shadow: 10px 10px green; */
-}
-#Work p{
-   /*  border: solid 2px rgb(202, 166, 4); */
     padding: 20px;
     border-radius: 40px;
-    /* box-shadow: 10px 10px yellow; */
+    font-size: 1.7rem;
+}
+#Work p{
+    padding: 20px;
+    border-radius: 40px;
 }
 #Team p{
-   /*  border: solid 2px rgb(196, 7, 149); */
     padding: 20px;
     padding-left: 3vw;
     padding-right: 3vw;
     border-radius: 40px;
 }
 #Contact p{
-   /*  border: solid 2px rgb(7, 196, 149); */
     padding: 20px;
     border-radius: 40px;
 }
@@ -391,7 +323,6 @@ section p{
     color: rgb(7, 196, 149);
 }
 
-/*color of the spans*/
 #abUs [data-scroll="in"] span{
     color: rgb(7, 73, 196);
     transition: all 2.3s ;
@@ -479,20 +410,6 @@ h1,p{
     transform: translate(-2px,-2px);
     box-shadow: red 3px 3px;
 }
-/* .scrolled{
-    border-radius: 20px;
-    background-color: rgba(0, 0, 0, 1);
-    border: red solid 2px;
-    box-shadow: red 3px 3px;
-    
-    transition: 2.5s ease border-radius, 2.5s ease border-color;
-}
-
-.scrolled:hover{
-    background-color: rgb(0, 0, 0);
-    transform: translate(2px,2px);
-    box-shadow: red 1px 1px;
-} */
 
 .navclick{
     background-color: rgb(0, 0, 0);
@@ -505,8 +422,6 @@ h1,p{
     
 }
 
-
-
 #Team{
     padding: 0;
     height: 105vw;
@@ -515,8 +430,6 @@ h1,p{
 #Team h1{
     margin: 50px;
 }
-
-
 
 #Team section{
     display: flex;
@@ -656,106 +569,6 @@ background-image: linear-gradient(315deg, #6617cb 0%, #cb218e 74%);
     color: blueviolet;
 }
 
-/* #Team section #Snape .box .cntBx div.co{
-    background-color: #a40606;
-background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
-    
-}
-#Team section #Raj .box .cntBx div.co{
-    background-color: #a40606;
-background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
-
-}
-#Team section #Adrian .box .cntBx div.co{
-    background-color: #a40606;
-background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
-
-}
-#Team section #Kween .box .cntBx div.co{
-    background-color: #a40606;
-    background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
-    
-}
-#Team section #Bhakti .box .cntBx div.co{
-    background-color: #a40606;
-background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
-
-}
-#Team section #Akshita .box .cntBx div.co{
-    background-color: #a40606;
-    background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
-    
-}
-#Team section #Param .box .cntBx div.co{
-    background-color: #a40606;
-background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
-
-}
-#Team section #mathBoi .box .cntBx div.co{
-    background-color: #a40606;
-background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
-
-}
-#Team section #Rutanshi .box .cntBx div.co{
-    background-color: #a40606;
-    background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
-    
-}
-#Team section #Ashika .box .cntBx div.co{
-    background-color: #a40606;
-background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
-
-}
-#Team section #Sree .box .cntBx div.co{
-    background-color: #a40606;
-background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
-
-}
-#Team section #Alice .box .cntBx div.co{
-    background-color: #a40606;
-background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
-
-}
-#Team section #sruthi .box .cntBx div.co{
-    background-color: #a40606;
-background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
-
-}
-#Team section #Syamadas .box .cntBx div.co{
-    background-color: #a40606;
-background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
-
-}
-#Team section #Keerthi .box .cntBx div.co{
-    background-color: #a40606;
-background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
-
-}
-#Team section #Sahasra .box .cntBx div.co{
-    background-color: #a40606;
-background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
-
-}
-#Team section #Aswathi .box .cntBx div.co{
-    background-color: #a40606;
-background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
-
-}
-#Team section #Suneet .box .cntBx div.co{
-    background-color: #a40606;
-    background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
-    
-}
-#Team section #Padmashree .box .cntBx div.co{
-    background-color: #a40606;
-background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
-
-}
-#Team section #Apoorv .box .cntBx div.co{
-    background-color: #a40606;
-background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
-
-} */
 
 #Team section #Padmashree{
     visibility: hidden;
@@ -992,81 +805,6 @@ section#Contact div p::selection{
       height: 100%;
   }
 
-/*   .furm{
-      height: 30vh;
-  }
-
-.furm form{
-    display: flex;
-    width: 100vw;
-}
-
-.furm form .ins{
-    width: 50vw;
-    margin: auto;
-    display: grid;
-    place-items: center;
-}
-
-.furm form #formsubmit{
-    position: absolute;
-    bottom: 15px;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: visible;
-}
-
-.furm form #formsubmit input{
-    background-color: transparent;
-    color: rgb(255, 255, 255);
-    background-color: #f00000;
-    font-size: 1.3rem;
-    font-family: 'Roboto Mono', monospace;
-    padding: 1rem;
-    width: 22rem;
-    border-radius: 20px;
-    font-weight: 700;
-    cursor: crosshair;
-    
-}
-
-#fname,#fmail{
-    width: 30vw;
-    padding: 10px;
-    background-color: rgb(0, 0, 0);
-    border: #a40606 2px solid;
-    border-radius: 35px;
-    font-size: 1.3rem;
-    color: rgb(128, 122, 122);
-    text-align: center;
-    font-family: 'Roboto Mono',monospace;
-}
-
-#fname:focus,#fmail:focus{
-        outline: 2px solid transparent;
-}
-
-.inslabel{
-    width: 50vw;
-    text-align: center;
-    align-self: flex-start;
-    font-family: 'Roboto Mono',monospace;
-    font-size: 1.8rem;
-}
-
-.furm form #formsubmit input:focus{
-    outline: transparent;
-}
-
-.furm form #formsubmit input:hover{
-    background: red ;
-    color: black;
-    box-shadow: 7px 7px rgb(148, 7, 7);
-    transform: translate(-5px,-5px) scale(0.95);
-}
- */
 ::-webkit-scrollbar{
     width: 10px;
 }
@@ -1132,10 +870,6 @@ section#Contact div p::selection{
     padding: 5px;
     border: rgb(37, 194, 6) solid 3px;
     border-radius: 70px;
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    width: fit-content; */
     text-align: center;
     margin-right: 10px;
     line-height: 135%;

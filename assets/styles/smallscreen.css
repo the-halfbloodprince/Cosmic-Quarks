@@ -234,10 +234,9 @@ section{
     clip-path: polygon(5% 0, 95% 0, 95% 100%, 5% 100%);
 }
 #Team section .box .cntBx{
-    background: #C02425;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #F0CB35, #C02425);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #F0CB35, #C02425); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+    background: #C02425;
+    background: -webkit-linear-gradient(to right, #F0CB35, #C02425);
+    background: linear-gradient(to right, #F0CB35, #C02425);
     border-radius: 5px;
     overflow: visible;
 }
@@ -276,10 +275,6 @@ section{
     font-size: 1.7em;
     margin: 5px;
     margin-top: 2px;
-}
-
-#Contact{
-
 }
 
 #Contact h1{
@@ -343,9 +338,7 @@ section{
 #abUs h1 span{
     color: rgba(7, 73, 196,0.7);
 }
-/* #Theory p::selection{
-    background-color: rgb(7, 196, 48);
-} */
+
 #Work h1 span{
     color: rgb(202, 166, 4);
 }
@@ -360,48 +353,6 @@ section{
     display: none;
 }
 
-/* .furm{
-    height: 40vh;
-    font-family: 'Roboto Mono',monospace;
-}
-
-.furm form{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#fname,#fmail{
-    width: 75vw;
-    padding: 10px;
-    margin: 10px;
-    background-color: black;
-    border: #a40606 2px solid;
-    border-radius: 20px;
-    font-family: inherit;
-}
-
-#fname:focus,#fmail:focus{
-    outline: transparent;
-}
-
-.inslabel{
-    font-size: 1.2rem;
-}
-
-#formsubmit input{
-    margin: 10px;
-    width: 16rem;
-    padding: 10px;
-    background-color: red;
-    color: white;
-    border-radius: 16px;
-    font-size: 1.2rem;
-    font-family: inherit;
-}
- */
 ::-webkit-scrollbar{
     width: 7px;
     overflow: visible;
@@ -423,19 +374,18 @@ section{
     background-color: blueviolet;
 }
 .sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
+    height: 100%;
+    width: 0; 
+    position: fixed;
+    z-index: 1;
+    top: 0;
     left: 0;
-    background-color: #111; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    background-color: #111;
+    overflow-x: hidden; 
+    padding-top: 60px;
+    transition: 0.5s;
   }
   
-  /* The navigation menu links */
   .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -445,12 +395,10 @@ section{
     transition: 0.3s;
   }
   
-  /* When you mouse over the navigation links, change their color */
   .sidenav a:hover {
     color: #f1f1f1;
   }
   
-  /* Position and style the close button (top right corner) */
   .sidenav .closebtn {
     position: absolute;
     bottom: 40px;
@@ -463,10 +411,7 @@ section{
     text-align: center;
     place-items: center;
   }
-  
-  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-  
-  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
