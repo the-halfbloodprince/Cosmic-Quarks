@@ -125,6 +125,10 @@ nav ul li{
     transform: scale(1);
 } */
 
+#logodiv{
+    object-fit: contain;
+}
+
 
 #logo{
     position: absolute;
