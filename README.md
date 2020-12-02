@@ -25,11 +25,11 @@ Our work in summary started off with intense literature review of what systems w
 
 2. **Akshita Swaminathan**, Department of Aerospace Engineering, SRM Institute of Science and Technology, Chennai 
  
-3. **Alice I**,Karunya University, Coimbatore 
+3. **Alice I**, Karunya University, Coimbatore 
 
-4. **Ashika A**,Amrita Vishwa Vidyapeetham, Coimbatore 
+4. **Ashika A**, Amrita Vishwa Vidyapeetham, Coimbatore 
 
-5. **Aswathi P S**,Amrita Vishwa Vidyapeetham, Coimbatore 
+5. **Aswathi P S**, Amrita Vishwa Vidyapeetham, Coimbatore 
 
 6. **Bhakti Mithagri**, Department of Physics, Ramnarain Ruia College, Mumbai 
 
@@ -41,21 +41,21 @@ Our work in summary started off with intense literature review of what systems w
 
 10. **Raj Panchal**, Thakur College of Science and Commerce 
 
-11. **Rutanshi Pradhan** ,Center for Basic Sciences, Pt. Ravishankar Shukla University, Raipur 
+11. **Rutanshi Pradhan**, Center for Basic Sciences, Pt. Ravishankar Shukla University, Raipur 
 
-12. **Sahasra S**,Psg college of arts and science,coimbatore 
+12. **Sahasra S**, PSG college of arts and science, Coimbatore 
 
-13. **Sahasransu Mohanty**, School of Applied Sciences,CUTM. 
+13. **Sahasransu Mohanty**, School of Applied Sciences, CUTM. 
 
 14. **Shradha Ramakrishnan**, Amrita Vishwa Vidyapeetham 
 
-15. **Sreeranjini.P.U** ,Amrita Viswa Vidyapeetham, Coimbatore 
+15. **Sreeranjini.P.U**, Amrita Viswa Vidyapeetham, Coimbatore 
 
-16. **Sruthi P V**,Amrita Viswa Vidyapeetham, Coimbatore 
+16. **Sruthi P V**, Amrita Viswa Vidyapeetham, Coimbatore 
 
-17. **S.Syamadas** ,Amrita Vishwa Vidyapeetham, Coimbatore 
+17. **S.Syamadas**, Amrita Vishwa Vidyapeetham, Coimbatore 
 
-18. **Suneet Ranjan Khuntia**,Aerospace engineering, Chandigarh University
+18. **Suneet Ranjan Khuntia**, Aerospace engineering, Chandigarh University
 
 ### Mentor:
 
